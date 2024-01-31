@@ -3792,7 +3792,8 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
             gBattleStruct->atkCancellerTracker++;
             break;
         case CANCELLER_MULTIHIT_MOVES:
-            if (gBattleMoves[gCurrentMove].effect == EFFECT_MULTI_HIT)
+            if (gBattleMoves[gCurrentMove].effect == EFFECT_MULTI_HIT
+                || gBattleMoves[gCurrentMove].effect == EFFECT_BARB_BARRAGE)
             {
                 u16 ability = gBattleMons[gBattlerAttacker].ability;
 

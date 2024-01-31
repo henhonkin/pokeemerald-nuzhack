@@ -13325,8 +13325,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_BARB_BARRAGE] =
     {
-        .effect = EFFECT_BARB_BARRAGE,
-        .power = 60,
+        .effect = EFFECT_BARB_BARRAGE, // changed to be Poison and multi-effect
+        .power = 23,
         .type = TYPE_POISON,
         .accuracy = 100,
         #if B_UPDATED_MOVE_DATA >= GEN_9

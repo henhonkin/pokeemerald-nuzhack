@@ -777,6 +777,7 @@ s32 AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u8 *typeEffectivenes
             case EFFECT_SONICBOOM:
                 dmg = 20 * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1);
                 break;
+            case EFFECT_BARB_BARRAGE:
             case EFFECT_MULTI_HIT:
                 dmg *= (aiData->abilities[battlerAtk] == ABILITY_SKILL_LINK ? 5 : 3);
                 break;
