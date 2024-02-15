@@ -4027,9 +4027,21 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .lvl = 5,
+    .lvl = 7,
     .species = SPECIES_POOCHYENA,
+    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+      .lvl = 7,
+      .species = SPECIES_RATTATA,
+      .moves = {MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+      .lvl = 7,
+      .species = SPECIES_DRATINI,
+      .moves = {MOVE_EMBER, MOVE_THUNDER_SHOCK, MOVE_WATER_GUN, MOVE_NONE}
     }
+    
 };
 
 static const struct TrainerMon sParty_Billy[] = {
