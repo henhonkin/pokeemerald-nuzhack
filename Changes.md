@@ -11,3 +11,5 @@ normal -> steel
 ## Mechanics
 ### Multihit moves
 Multihit moves are calculated using the new formula
+## Contributers
+H & U
