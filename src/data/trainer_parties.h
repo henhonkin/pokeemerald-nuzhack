@@ -4213,12 +4213,22 @@ static const struct TrainerMon sParty_Eddie[] = {
 
 static const struct TrainerMon sParty_Allen[] = {
     {
-    .lvl = 4,
+    .lvl = 8,
     .species = SPECIES_ZIGZAGOON,
+    .nature = NATURE_ADAMANT,
+    .moves = {MOVE_HEADBUTT, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 3,
+    .lvl = 8,
     .species = SPECIES_TAILLOW,
+    .nature = NATURE_ADAMANT,
+    .moves = {MOVE_TACKLE, MOVE_WING_ATTACK, MOVE_STEEL_WING, MOVE_NONE}
+    },
+    {
+    .lvl = 8,
+    .species = SPECIES_POOCHYENA,
+    .nature = NATURE_ADAMANT,
+    .moves = {MOVE_BITE, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_ICE_FANG}
     }
 };
 
@@ -7733,12 +7743,40 @@ static const struct TrainerMon sParty_Crissy[] = {
 
 static const struct TrainerMon sParty_Rick[] = {
     {
-    .lvl = 4,
+    .lvl = 10,
+    .nature = NATURE_HARDY,
     .species = SPECIES_WURMPLE,
+    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 4,
-    .species = SPECIES_WURMPLE,
+    .lvl = 10,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_CATERPIE,
+    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+    .lvl = 10,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_WEEDLE,
+    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+    .lvl = 10,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_LEDYBA,
+      //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+    .lvl = 10,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_SPINARAK,
+      //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+    .lvl = 10,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_SURSKIT,
+      //.moves = {MOVE_WATER_GUN, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
     }
 };
 
