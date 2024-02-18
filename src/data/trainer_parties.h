@@ -7596,12 +7596,22 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
 
 static const struct TrainerMon sParty_Tiana[] = {
     {
-    .lvl = 4,
-    .species = SPECIES_ZIGZAGOON,
+    .lvl = 9,
+    .species = SPECIES_RALTS,
+    .nature = NATURE_TIMID,
+    .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 4,
-    .species = SPECIES_SHROOMISH,
+    .lvl = 9,
+    .nature = NATURE_JOLLY,
+    .species = SPECIES_MEDITITE,
+    .moves = {MOVE_LOW_KICK, MOVE_CONFUSION, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 9,
+    .nature = NATURE_BOLD,
+    .species = SPECIES_CHINCHOU,
+    .moves = {MOVE_WATER_GUN, MOVE_POWDER_SNOW, MOVE_THUNDER_SHOCK, MOVE_NONE}
     }
 };
 
