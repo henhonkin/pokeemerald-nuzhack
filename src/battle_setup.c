@@ -82,6 +82,7 @@ static void CB2_EndScriptedWildBattle(void);
 static void TryUpdateGymLeaderRematchFromWild(void);
 static void TryUpdateGymLeaderRematchFromTrainer(void);
 static void CB2_GiveStarter(void);
+static void CB2_GiveStarter2(void);
 static void CB2_StartFirstBattle(void);
 static void CB2_EndFirstBattle(void);
 static void SaveChangesToPlayerParty(void);
@@ -916,7 +917,7 @@ u8 GetTrainerBattleTransition(void)
     enemyLevel = GetSumOfEnemyPartyLevel(gTrainerBattleOpponent_A, minPartyCount);
     playerLevel = GetSumOfPlayerPartyLevel(minPartyCount);
 
-    if (enemyLevel < playerLevel)
+    if (enemyLevel < 4*playerLevel/5)
         return sBattleTransitionTable_Trainer[transitionType][0];
     else
         return sBattleTransitionTable_Trainer[transitionType][1];
@@ -976,17 +977,33 @@ void ChooseStarter(void)
     gMain.savedCallback = CB2_GiveStarter;
 }
 
+void ChooseSecStarter(void)
+{
+    SetMainCallback2(CB2_ChooseStarter2);
+    gMain.savedCallback = CB2_GiveStarter2;
+    
+}
+
 static void CB2_GiveStarter(void)
 {
     u16 starterMon;
-
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 5, ITEM_NONE, 0, 0, 0);
+    ScriptGiveMon(starterMon, 5, ITEM_ORAN_BERRY, 0, 0, 0);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);
     BattleTransition_Start(B_TRANSITION_BLUR);
+}
+
+static void CB2_GiveStarter2(void)
+{
+    u16 starterMon;
+//    *GetVarPointer(VAR_STARTER_MON2) = gSpecialVar_Result;
+    starterMon = GetStarterPokemon2(gSpecialVar_Result);
+    ScriptGiveMon(starterMon, 5, ITEM_ORAN_BERRY, 0, 0, 0);
+    ResetTasks();
+    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }
 
 static void CB2_StartFirstBattle(void)
