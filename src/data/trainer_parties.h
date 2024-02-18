@@ -7596,19 +7596,19 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
 
 static const struct TrainerMon sParty_Tiana[] = {
     {
-    .lvl = 9,
+    .lvl = 8,
     .species = SPECIES_RALTS,
     .nature = NATURE_TIMID,
     .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 9,
+    .lvl = 8,
     .nature = NATURE_JOLLY,
     .species = SPECIES_MEDITITE,
     .moves = {MOVE_LOW_KICK, MOVE_CONFUSION, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 9,
+    .lvl = 8,
     .nature = NATURE_BOLD,
     .species = SPECIES_CHINCHOU,
     .moves = {MOVE_WATER_GUN, MOVE_POWDER_SNOW, MOVE_THUNDER_SHOCK, MOVE_NONE}
@@ -7753,37 +7753,37 @@ static const struct TrainerMon sParty_Crissy[] = {
 
 static const struct TrainerMon sParty_Rick[] = {
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_WURMPLE,
     //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_CATERPIE,
     //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_WEEDLE,
     //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_LEDYBA,
       //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_SPINARAK,
       //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
     },
     {
-    .lvl = 10,
+    .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_SURSKIT,
       //.moves = {MOVE_WATER_GUN, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
