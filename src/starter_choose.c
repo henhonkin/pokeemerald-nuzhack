@@ -114,7 +114,14 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
     SPECIES_TREECKO,
     SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
+    SPECIES_MARSHTOMP,
+};
+
+static const u16 sStarterMon2[STARTER_MON_COUNT] =
+{
+    SPECIES_GASTLY,
+    SPECIES_MACHOP,
+    SPECIES_HAPPINY,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -347,12 +354,24 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
     .callback = SpriteCB_StarterPokemon
 };
 
+bool16 first_chosen = FALSE;
 // .text
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
     if (chosenStarterId > STARTER_MON_COUNT)
         chosenStarterId = 0;
+    if (FlagGet(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG))
+    {
+        return sStarterMon2[chosenStarterId];
+    } 
     return sStarterMon[chosenStarterId];
+}
+
+u16 GetStarterPokemon2(u16 chosenStarterId)
+{
+    if (chosenStarterId > STARTER_MON_COUNT)
+        chosenStarterId = 0;
+    return sStarterMon2[chosenStarterId];
 }
 
 static void VblankCB_StarterChoose(void)
@@ -370,6 +389,11 @@ static void VblankCB_StarterChoose(void)
 // Data for sSpriteTemplate_Pokeball
 #define sTaskId data[0]
 #define sBallId data[1]
+
+void CB2_ChooseStarter2(void)
+{
+    CB2_ChooseStarter();
+}
 
 void CB2_ChooseStarter(void)
 {
@@ -566,7 +590,6 @@ static void Task_DeclineStarter(u8 taskId)
 {
     gTasks[taskId].func = Task_StarterChoose;
 }
-
 static void CreateStarterPokemonLabel(u8 selection)
 {
     u8 categoryText[32];

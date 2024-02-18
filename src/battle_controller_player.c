@@ -11,6 +11,7 @@
 #include "battle_z_move.h"
 #include "bg.h"
 #include "data.h"
+#include "event_data.h"
 #include "item.h"
 #include "item_menu.h"
 #include "link.h"
@@ -1433,6 +1434,29 @@ static s32 GetTaskExpValue(u8 taskId)
     return (u16)(gTasks[taskId].tExpTask_gainedExp_1) | (gTasks[taskId].tExpTask_gainedExp_2 << 16);
 }
 
+static u8 calcLevelCap() {
+    u8 obedienceLevel = 7;
+    if (FlagGet(FLAG_HIDE_ROUTE_103_RIVAL))
+        obedienceLevel = 10;
+    if (FlagGet(FLAG_VISITED_RUSTBORO_CITY))
+        obedienceLevel = 15;
+    if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
+        obedienceLevel = 20;
+    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
+        obedienceLevel = 30;
+    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
+        obedienceLevel = 40;
+    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
+        obedienceLevel = 50;
+    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
+        obedienceLevel = 60;
+    if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
+        obedienceLevel = 70;
+    if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
+        obedienceLevel = 80;
+    return obedienceLevel;
+}
+
 static void Task_GiveExpToMon(u8 taskId)
 {
     u32 monId = (u8)(gTasks[taskId].tExpTask_monId);
@@ -1447,7 +1471,7 @@ static void Task_GiveExpToMon(u8 taskId)
         u32 currExp = GetMonData(mon, MON_DATA_EXP);
         u32 nextLvlExp = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
 
-        if (currExp + gainedExp >= nextLvlExp)
+        if (currExp + gainedExp >= nextLvlExp && level < calcLevelCap())
         {
             SetMonData(mon, MON_DATA_EXP, &nextLvlExp);
             gBattleStruct->dynamax.levelUpHP = GetMonData(mon, MON_DATA_HP) \
@@ -1531,7 +1555,7 @@ static void Task_GiveExpWithExpBar(u8 taskId)
             species = GetMonData(&gPlayerParty[monId], MON_DATA_SPECIES);
             expOnNextLvl = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
 
-            if (currExp + gainedExp >= expOnNextLvl)
+            if (currExp + gainedExp >= expOnNextLvl && level < calcLevelCap()) 
             {
                 SetMonData(&gPlayerParty[monId], MON_DATA_EXP, &expOnNextLvl);
                 gBattleStruct->dynamax.levelUpHP = GetMonData(&gPlayerParty[monId], MON_DATA_HP) \
