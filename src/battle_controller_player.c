@@ -41,6 +41,7 @@
 #include "constants/trainers.h"
 #include "constants/rgb.h"
 #include "level_caps.h"
+#include "level_cap.h"
 
 static void PlayerBufferExecCompleted(u32 battler);
 static void PlayerHandleLoadMonSprite(u32 battler);
@@ -1434,28 +1435,6 @@ static s32 GetTaskExpValue(u8 taskId)
     return (u16)(gTasks[taskId].tExpTask_gainedExp_1) | (gTasks[taskId].tExpTask_gainedExp_2 << 16);
 }
 
-static u8 calcLevelCap() {
-    u8 obedienceLevel = 7;
-    if (FlagGet(FLAG_HIDE_ROUTE_103_RIVAL))
-        obedienceLevel = 10;
-    if (FlagGet(FLAG_VISITED_RUSTBORO_CITY))
-        obedienceLevel = 15;
-    if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
-        obedienceLevel = 20;
-    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
-        obedienceLevel = 30;
-    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
-        obedienceLevel = 40;
-    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
-        obedienceLevel = 50;
-    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
-        obedienceLevel = 60;
-    if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
-        obedienceLevel = 70;
-    if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
-        obedienceLevel = 80;
-    return obedienceLevel;
-}
 
 static void Task_GiveExpToMon(u8 taskId)
 {
@@ -1471,7 +1450,7 @@ static void Task_GiveExpToMon(u8 taskId)
         u32 currExp = GetMonData(mon, MON_DATA_EXP);
         u32 nextLvlExp = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
 
-        if (currExp + gainedExp >= nextLvlExp && level < calcLevelCap())
+        if (currExp + gainedExp >= nextLvlExp)
         {
             SetMonData(mon, MON_DATA_EXP, &nextLvlExp);
             gBattleStruct->dynamax.levelUpHP = GetMonData(mon, MON_DATA_HP) \
@@ -1494,8 +1473,7 @@ static void Task_GiveExpToMon(u8 taskId)
                 gTasks[taskId].func = Task_LaunchLvlUpAnim;
             else
                 gTasks[taskId].func = Task_SetControllerToWaitForString;
-        }
-        else
+        } else
         {
             currExp += gainedExp;
             SetMonData(mon, MON_DATA_EXP, &currExp);
