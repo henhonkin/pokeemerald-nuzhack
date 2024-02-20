@@ -1,5 +1,9 @@
-#include 'event_data.h'
-#include 'level_cap.h'
+#include <gba/types.h>
+
+#include "event_data.h"
+#include "level_cap.h"
+
+#include <constants/flags.h>
 
 static u8 calcLevelCap() {
     u8 obedienceLevel = 7;
