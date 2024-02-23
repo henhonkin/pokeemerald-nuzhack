@@ -11,6 +11,7 @@
 #include "battle_z_move.h"
 #include "bg.h"
 #include "data.h"
+#include "event_data.h"
 #include "item.h"
 #include "item_menu.h"
 #include "link.h"
@@ -1431,6 +1432,7 @@ static s32 GetTaskExpValue(u8 taskId)
     return (u16)(gTasks[taskId].tExpTask_gainedExp_1) | (gTasks[taskId].tExpTask_gainedExp_2 << 16);
 }
 
+
 static void Task_GiveExpToMon(u8 taskId)
 {
     u32 monId = (u8)(gTasks[taskId].tExpTask_monId);
@@ -1444,7 +1446,10 @@ static void Task_GiveExpToMon(u8 taskId)
         u8 level = GetMonData(mon, MON_DATA_LEVEL);
         u32 currExp = GetMonData(mon, MON_DATA_EXP);
         u32 nextLvlExp = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
-
+        if (calcLevelCap() >= level && currExp + gainedExp >= nextLvlExp)
+        {
+            gainedExp = nextLvlExp - currExp -1;
+        }
         if (currExp + gainedExp >= nextLvlExp)
         {
             SetMonData(mon, MON_DATA_EXP, &nextLvlExp);
@@ -1468,8 +1473,7 @@ static void Task_GiveExpToMon(u8 taskId)
                 gTasks[taskId].func = Task_LaunchLvlUpAnim;
             else
                 gTasks[taskId].func = Task_SetControllerToWaitForString;
-        }
-        else
+        } else
         {
             currExp += gainedExp;
             SetMonData(mon, MON_DATA_EXP, &currExp);
@@ -1528,6 +1532,10 @@ static void Task_GiveExpWithExpBar(u8 taskId)
             currExp = GetMonData(&gPlayerParty[monId], MON_DATA_EXP);
             species = GetMonData(&gPlayerParty[monId], MON_DATA_SPECIES);
             expOnNextLvl = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
+            if (calcLevelCap() <= level && currExp + gainedExp >= expOnNextLvl)
+            {
+                gainedExp = expOnNextLvl - currExp -1;
+            }
 
             if (currExp + gainedExp >= expOnNextLvl)
             {
