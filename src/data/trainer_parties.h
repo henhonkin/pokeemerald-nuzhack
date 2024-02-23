@@ -7756,37 +7756,37 @@ static const struct TrainerMon sParty_Rick[] = {
     .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_WURMPLE,
-    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    .moves = {MOVE_POISON_STING, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_CATERPIE,
-    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    .moves = {MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_WEEDLE,
-    //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    .moves = {MOVE_POISON_STING, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_LEDYBA,
-      //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    .moves = {MOVE_SUPERSONIC, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
     .nature = NATURE_HARDY,
-    .species = SPECIES_SPINARAK,
-      //.moves = {MOVE_BUG_BITE, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE}
+    .species = SPECIES_GEODUDE,
+    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
     .nature = NATURE_HARDY,
     .species = SPECIES_SURSKIT,
-      //.moves = {MOVE_WATER_GUN, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
     }
 };
 
