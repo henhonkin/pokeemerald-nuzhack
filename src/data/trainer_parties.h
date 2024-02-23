@@ -4029,17 +4029,17 @@ static const struct TrainerMon sParty_Calvin1[] = {
     {
     .lvl = 7,
     .species = SPECIES_POOCHYENA,
-    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE}
+    },
+    {
+      .lvl = 8,
+      .species = SPECIES_PIDGEY,
+      .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_NONE, MOVE_NONE}
     },
     {
       .lvl = 7,
-      .species = SPECIES_RATTATA,
-      .moves = {MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
-    },
-    {
-      .lvl = 7,
-      .species = SPECIES_DRATINI,
-      .moves = {MOVE_EMBER, MOVE_THUNDER_SHOCK, MOVE_WATER_GUN, MOVE_NONE}
+      .species = SPECIES_DIGLETT,
+      .moves = {MOVE_METAL_CLAW, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE}
     }
     
 };
@@ -4220,15 +4220,15 @@ static const struct TrainerMon sParty_Allen[] = {
     },
     {
     .lvl = 8,
-    .species = SPECIES_TAILLOW,
+    .species = SPECIES_TREECKO,
     .nature = NATURE_ADAMANT,
-    .moves = {MOVE_TACKLE, MOVE_WING_ATTACK, MOVE_STEEL_WING, MOVE_NONE}
+    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 8,
-    .species = SPECIES_POOCHYENA,
+    .species = SPECIES_MUDKIP,
     .nature = NATURE_ADAMANT,
-    .moves = {MOVE_BITE, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_ICE_FANG}
+    .moves = {MOVE_BITE, MOVE_MUD_SLAP, MOVE_THUNDER_FANG, MOVE_ICE_FANG}
     }
 };
 
