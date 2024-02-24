@@ -4032,7 +4032,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
     .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE}
     },
     {
-      .lvl = 8,
+      .lvl = 7,
       .species = SPECIES_PIDGEY,
       .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_NONE, MOVE_NONE}
     },
@@ -7608,7 +7608,7 @@ static const struct TrainerMon sParty_Tiana[] = {
     .moves = {MOVE_POWDER_SNOW, MOVE_MUD_SLAP, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 9,
+    .lvl = 8,
     .nature = NATURE_BOLD,
     .species = SPECIES_CHINCHOU,
     .moves = {MOVE_WATER_GUN, MOVE_ELECTRO_BALL, MOVE_NONE, MOVE_NONE}
