@@ -7596,22 +7596,22 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
 
 static const struct TrainerMon sParty_Tiana[] = {
     {
-    .lvl = 8,
+    .lvl = 9,
     .species = SPECIES_RALTS,
     .nature = NATURE_TIMID,
     .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
-    .nature = NATURE_JOLLY,
-    .species = SPECIES_MEDITITE,
-    .moves = {MOVE_LOW_KICK, MOVE_CONFUSION, MOVE_NONE, MOVE_NONE}
+    .lvl = 9,
+    .nature = NATURE_TIMID,
+    .species = SPECIES_SWINUB,
+    .moves = {MOVE_POWDER_SNOW, MOVE_MUD_SLAP, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_BOLD,
     .species = SPECIES_CHINCHOU,
-    .moves = {MOVE_WATER_GUN, MOVE_POWDER_SNOW, MOVE_THUNDER_SHOCK, MOVE_NONE}
+    .moves = {MOVE_WATER_GUN, MOVE_ELECTRO_BALL, MOVE_NONE, MOVE_NONE}
     }
 };
 
@@ -7753,37 +7753,37 @@ static const struct TrainerMon sParty_Crissy[] = {
 
 static const struct TrainerMon sParty_Rick[] = {
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_WURMPLE,
     .moves = {MOVE_POISON_STING, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_CATERPIE,
     .moves = {MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_WEEDLE,
     .moves = {MOVE_POISON_STING, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_LEDYBA,
     .moves = {MOVE_SUPERSONIC, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 8,
+    .lvl = 9,
     .nature = NATURE_HARDY,
     .species = SPECIES_SURSKIT,
     .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
