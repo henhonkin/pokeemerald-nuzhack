@@ -4039,19 +4039,35 @@ static const struct TrainerMon sParty_Calvin1[] = {
     {
       .lvl = 7,
       .species = SPECIES_DIGLETT,
-      .moves = {MOVE_METAL_CLAW, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE}
+      .moves = {MOVE_SCRATCH, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE}
     }
     
 };
 
 static const struct TrainerMon sParty_Billy[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_ZIGZAGOON,
+    .lvl = 11,
+    .species = SPECIES_SEEDOT,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_TACKLE, MOVE_ABSORB, MOVE_ASTONISH, MOVE_NONE}
     },
     {
-    .lvl = 7,
-    .species = SPECIES_SEEDOT,
+    .lvl = 11,
+    .species = SPECIES_WOOPER,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 9,
+    .species = SPECIES_GROWLITHE,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_BITE, MOVE_EMBER, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 11,
+    .species = SPECIES_ZIGZAGOON,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_HEADBUTT, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
 
@@ -7611,7 +7627,7 @@ static const struct TrainerMon sParty_Tiana[] = {
     .lvl = 8,
     .nature = NATURE_BOLD,
     .species = SPECIES_CHINCHOU,
-    .moves = {MOVE_WATER_GUN, MOVE_ELECTRO_BALL, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_WATER_GUN, MOVE_THUNDERSHOCK, MOVE_NONE, MOVE_NONE}
     }
 };
 
