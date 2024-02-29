@@ -1386,9 +1386,25 @@ static const struct TrainerMon sParty_Valerie5[] = {
 
 static const struct TrainerMon sParty_Cindy1[] = {
     {
-    .lvl = 7,
-    .species = SPECIES_ZIGZAGOON,
-    .heldItem = ITEM_NUGGET
+    .lvl = 11,
+    .species = SPECIES_MEOWTH,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_FAKE_OUT, MOVE_PAY_DAY, MOVE_BITE, MOVE_NONE},
+    .heldItem = ITEM_NUGGET,
+    },
+    {
+    .lvl = 10,
+    .species = SPECIES_HOPPIP,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_FAIRY_WIND, MOVE_TACKLE, MOVE_ABSORB, MOVE_SYNTHESIS},
+    .heldItem = ITEM_NUGGET,
+    },
+    {
+    .lvl = 11,
+    .species = SPECIES_VULPIX,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
+    .heldItem = ITEM_NUGGET,
     }
 };
 
@@ -8992,8 +9008,28 @@ static const struct TrainerMon sParty_Sarah[] = {
 
 static const struct TrainerMon sParty_Darian[] = {
     {
-    .lvl = 9,
+    .lvl = 15,
+    .nature = NATURE_HARDY,
     .species = SPECIES_MAGIKARP,
+    .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 15,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_HOPPIP,
+    .moves = {MOVE_SPLASH, MOVE_ABSORB, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 15,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_FEEBAS,
+    .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 15,
+    .nature = NATURE_HARDY,
+    .species = SPECIES_MAGIKARP,
+    .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     }
 };
 
