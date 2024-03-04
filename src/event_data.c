@@ -253,7 +253,7 @@ u8 calcLevelCap() {
     if (FlagGet(FLAG_HIDE_ROUTE_103_RIVAL))
         obedienceLevel = 9;
     if (FlagGet(FLAG_VISITED_PETALBURG_CITY))
-        obedienceLevel = 11;
+        obedienceLevel = 12;
     if (FlagGet(FLAG_VISITED_RUSTBORO_CITY))
         obedienceLevel = 15;
     if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
