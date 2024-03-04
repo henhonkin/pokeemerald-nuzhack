@@ -87,8 +87,28 @@ static const struct TrainerMon sParty_Gabrielle1[] = {
 
 static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
-    .lvl = 9,
+    .lvl = 11,
     .species = SPECIES_POOCHYENA,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_BITE, MOVE_SAND_ATTACK, MOVE_HOWL, MOVE_TACKLE},
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_CLEFAIRY,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_DISARMING_VOICE, MOVE_SING, MOVE_CHARM, MOVE_POUND},
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_CYNDAQUIL,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_EMBER, MOVE_SMOKESCREEN, MOVE_TACKLE, MOVE_NONE},
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_PSYDUCK,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_SCRATCH, MOVE_WATER_GUN, MOVE_CONFUSION, MOVE_NONE},
     }
 };
 
