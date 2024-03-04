@@ -7827,20 +7827,34 @@ static const struct TrainerMon sParty_Rick[] = {
 
 static const struct TrainerMon sParty_Lyle[] = {
     {
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .lvl = 12,
+    .species = SPECIES_SHUCKLE,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_STICKY_WEB, MOVE_STRUGGLE_BUG, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .lvl = 12,
+    .species = SPECIES_PARAS,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_SCRATCH, MOVE_POISON_POWDER, MOVE_STUN_SPORE, MOVE_SCRATCH}
     },
     {
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .lvl = 12,
+    .species = SPECIES_DUSTOX,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_CONFUSION, MOVE_GUST, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .lvl = 12,
+    .species = SPECIES_BEAUTIFLY,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_ABSORB, MOVE_GUST, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_NINCADA,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_ABSORB, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE}
     }
 };
 
