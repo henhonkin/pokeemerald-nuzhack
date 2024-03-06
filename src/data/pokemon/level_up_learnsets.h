@@ -9954,7 +9954,10 @@ static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
 
 #if P_FAMILY_BELDUM
 static const struct LevelUpMove sBeldumLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 8, MOVE_CONFUSION),
+    LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
+    LEVEL_UP_MOVE(20, MOVE_TAKE_DOWN),
     LEVEL_UP_END
 };
 
