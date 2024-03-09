@@ -1672,22 +1672,22 @@ static const struct TrainerMon sParty_Winston1[] = {
     {
     .lvl = 12,
     .species = SPECIES_MURKROW,
-    .NATURE = NATURE_HARDY,
-    .moves = {MOVE_GUST, MOVE_PECK, MOVE_ASTONISH, MOVE_NONE}
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_GUST, MOVE_PECK, MOVE_ASTONISH, MOVE_NONE},
     .heldItem = ITEM_NUGGET
     },
     {
     .lvl = 12,
     .species = SPECIES_BELDUM,
-    .NATURE = NATURE_HARDY,
-    .moves = {MOVE_METAL_CLAW, MOVE_CONFUSION, MOVE_TACKLE, MOVE_NONE}
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_METAL_CLAW, MOVE_CONFUSION, MOVE_TACKLE, MOVE_NONE},
     .heldItem = ITEM_NUGGET
     },
     {
     .lvl = 12,
     .species = SPECIES_SLUGMA,
-    .NATURE = NATURE_HARDY,
-    .moves = {MOVE_ROCK_THROW, MOVE_SMOG, MOVE_EMBER, MOVE_NONE}
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_ROCK_THROW, MOVE_SMOG, MOVE_EMBER, MOVE_NONE},
     .heldItem = ITEM_NUGGET
     }
 };
@@ -6032,12 +6032,28 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
 
 static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
-    .lvl = 6,
-    .species = SPECIES_SEEDOT,
+    .lvl = 12,
+    .species = SPECIES_ZIGZAGOON,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_HEADBUTT, MOVE_TAIL_WHIP, MOVE_GROWL, MOVE_NONE}
     },
     {
-    .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .lvl = 12,
+    .species = SPECIES_POOCHYENA,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_BITE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_RATTATA,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_TACKLE, MOVE_BITE, MOVE_TAIL_WHIP, MOVE_NONE}
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_SKITTY,
+    .nature = NATURE_HARDY,
+    .moves = {MOVE_SING, MOVE_TAIL_WHIP, MOVE_TACKLE, MOVE_FAKE_OUT}
     }
 };
 
@@ -7696,7 +7712,7 @@ static const struct TrainerMon sParty_Haley1[] = {
     {
     .lvl = 12,
     .nature = NATURE_HARDY,
-    .species = SPECIES_NIDORANF,
+    .species = SPECIES_NIDORAN_F,
     .moves = {MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_SCRATCH, MOVE_NONE}
     },    
     {
