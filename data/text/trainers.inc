@@ -80,6 +80,15 @@ Route103_Text_DaisyPostBattle:
 	.string "Aromatherapy is a form of mental\n"
 	.string "healing that works with fragrances.$"
 
+Route103_Text_RivallyIntro:
+	.string "I use your complement$"
+
+Route103_Text_RivallyPostBattle:
+	.string "You beat your complement...$"
+
+Route103_Text_RivallyDefeated:
+	.string "Nooooo!$"
+	
 Route103_Text_AmyIntro:
 	.string "AMY: I'm AMY.\n"
 	.string "And this is my little sister LIV.\l"

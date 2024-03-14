@@ -11,5 +11,7 @@ normal -> steel
 ## Mechanics
 ### Multihit moves
 Multihit moves are calculated using the new formula
+### Levelcap
+There is a hard levelcap, preventing levelup.
 ## Contributers
 H & U

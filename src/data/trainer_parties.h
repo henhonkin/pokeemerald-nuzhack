@@ -371,6 +371,17 @@ static const struct TrainerMon sParty_Daisy[] = {
     }
 };
 
+static const struct TrainerMon sParty_Rivally[] = {
+    {
+    .lvl = 5,
+    .species = SPECIES_1024_FORM_1,
+    },
+    {
+    .lvl = 5,
+    .species = SPECIES_1024_FORM_2,
+    }
+};
+
 static const struct TrainerMon sParty_Rose1[] = {
     {
     .lvl = 14,

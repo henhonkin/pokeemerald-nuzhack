@@ -24,7 +24,6 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
-#define STARTER_MON_COUNT   3
 
 // Position of the sprite of the selected starter Pokemon
 #define STARTER_PKMN_POS_X (DISPLAY_WIDTH / 2)
@@ -117,12 +116,6 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
     SPECIES_MUDKIP,
 };
 
-static const u16 sStarterMon2[STARTER_MON_COUNT] =
-{
-    SPECIES_GASTLY,
-    SPECIES_MACHOP,
-    SPECIES_HAPPINY,
-};
 
 static const struct BgTemplate sBgTemplates[3] =
 {
@@ -362,7 +355,7 @@ u16 GetStarterPokemon(u16 chosenStarterId)
         chosenStarterId = 0;
     if (FlagGet(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG))
     {
-        return sStarterMon2[chosenStarterId];
+        return GetStarterPokemon2(chosenStarterId);
     } 
     return sStarterMon[chosenStarterId];
 }
@@ -371,7 +364,13 @@ u16 GetStarterPokemon2(u16 chosenStarterId)
 {
     if (chosenStarterId > STARTER_MON_COUNT)
         chosenStarterId = 0;
-    return sStarterMon2[chosenStarterId];
+
+    u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
+            | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+            | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+            | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+    u8 usedCore = otid % 64;
+    return sStarterMon2[usedCore][chosenStarterId];
 }
 
 static void VblankCB_StarterChoose(void)
