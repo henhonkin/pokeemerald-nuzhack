@@ -444,6 +444,18 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Daisy),
     },
 
+    [TRAINER_RIVALLY] = 
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("RIVALLY"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = TRAINER_PARTY(sParty_Rivally),
+    },
+
     [TRAINER_ROSE_1] =
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,

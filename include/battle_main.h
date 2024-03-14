@@ -88,4 +88,32 @@ extern const u8 gStatusConditionString_LoveJpn[8];
 
 extern const u8 *const gStatusConditionStringsTable[7][2];
 
+#define PICHU_STARTER 0
+#define CATERPIE_STARTER 1
+#define SEEDOT_STARTER 2
+#define NUM_DEFINED_STARTERS SEEDOT_STARTER +1
+
+u8 GetDefinedStarterPokemon(u8 starterId);
+
+static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
+    [PICHU_STARTER] = {
+        .species = SPECIES_PICHU,
+        .heldItem = ITEM_ORAN_BERRY,
+        .moves = {MOVE_THUNDERSHOCK, MOVE_ZAP_CANNON, MOVE_NONE, MOVE_NONE},
+        .lvl = 5,
+    },
+    [CATERPIE_STARTER] = {
+        .species = SPECIES_CATERPIE,
+        .heldItem = ITEM_ORAN_BERRY,
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_BUG_BITE, MOVE_NONE},
+        .lvl = 5,
+    },
+    [SEEDOT_STARTER] = {
+        .species = SPECIES_SEEDOT,
+        .heldItem = ITEM_ORAN_BERRY,
+        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_BULLET_SEED, MOVE_NONE},
+        .lvl = 5,
+    }
+};
+
 #endif // GUARD_BATTLE_MAIN_H
