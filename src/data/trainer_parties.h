@@ -4140,7 +4140,7 @@ static const struct TrainerMon sParty_Billy[] = {
 
 static const struct TrainerMon sParty_Josh[] = {
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
@@ -4154,7 +4154,7 @@ static const struct TrainerMon sParty_Josh[] = {
     {
     .iv = 0,
     .lvl = 15,
-    .species = SPECIES_TENTACRUEL,
+    .species = SPECIES_TENTACOOL,
     .moves = {MOVE_ACID, MOVE_WATER_PULSE, MOVE_NONE, MOVE_NONE}
     },
     {
@@ -4167,12 +4167,12 @@ static const struct TrainerMon sParty_Josh[] = {
 
 static const struct TrainerMon sParty_Tommy[] = {
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
     },
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 15,
     .species = SPECIES_SLOWPOKE,
     .moves = {MOVE_CONFUSION, MOVE_WATER_GUN, MOVE_YAWN, MOVE_NONE}
@@ -7402,13 +7402,13 @@ static const struct TrainerMon sParty_GruntJaggedPass[] = {
 
 static const struct TrainerMon sParty_Marc[] = {
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 15,
     .species = SPECIES_ONIX,
     .moves = {MOVE_RAGE, MOVE_ROCK_THROW, MOVE_ROCK_TOMB, MOVE_NONE}
@@ -11252,7 +11252,7 @@ static const struct TrainerMon sParty_Darius[] = {
 
 static const struct TrainerMon sParty_Steven[] = {
     {
-    .iv = ,
+    .iv = 0,
     .lvl = 77,
     .species = SPECIES_SKARMORY,
     .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
