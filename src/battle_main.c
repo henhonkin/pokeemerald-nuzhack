@@ -1924,31 +1924,33 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     }
 }
 
-u16 GetDefinedStarterPokemon(u16 starterId) {
+u8 GetDefinedStarterPokemon(u16 starterId) {
+    u16 res = NUM_DEFINED_STARTERS;
     switch (starterId) {
         case SPECIES_PICHU:
-            return PICHU_STARTER;
+            res = PICHU_STARTER;
+            break;
         case SPECIES_CATERPIE:
-            return CATERPIE_STARTER;
+            res = CATERPIE_STARTER;
+            break;
         case SPECIES_SEEDOT:
-            return SEEDOT_STARTER;
-        default:
-            return NUM_DEFINED_STARTERS;
+            res = SEEDOT_STARTER;
+            break;
     };
-    return NUM_DEFINED_STARTERS;
+    return res;
 }
 
 struct TrainerMon GetMon(struct TrainerMon mon) {
     if (mon.species == SPECIES_1024_FORM_1) {
-        // Strong against the chosen one
+        // weak against the chosen one
         u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
             | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
             | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
             | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
         u8 usedCore = otid % 64;
         u8 chosen = *GetVarPointer(VAR_STARTER_MON2);
-        u8 starterId = sStarterMon2[usedCore][(chosen+1) % STARTER_MON_COUNT];
-        if (GetDefinedStarterPokemon(starterId) != NUM_DEFINED_STARTERS) {
+        u16 starterId = sStarterMon2[usedCore][(chosen+1) % STARTER_MON_COUNT];
+        if (GetDefinedStarterPokemon(starterId) < NUM_DEFINED_STARTERS) {
             return rivallyPokes[GetDefinedStarterPokemon(starterId)];
         } else {
             return rivallyPokes[0];
@@ -1962,8 +1964,8 @@ struct TrainerMon GetMon(struct TrainerMon mon) {
             | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
         u8 usedCore = otid % 64;
         u8 chosen = *GetVarPointer(VAR_STARTER_MON2);
-        u8 starterId = sStarterMon2[usedCore][(chosen-1) % STARTER_MON_COUNT];
-        if (GetDefinedStarterPokemon(starterId) != NUM_DEFINED_STARTERS) {
+        u16 starterId = sStarterMon2[usedCore][(chosen-1) % STARTER_MON_COUNT];
+        if (GetDefinedStarterPokemon(starterId) < NUM_DEFINED_STARTERS) {
             return rivallyPokes[GetDefinedStarterPokemon(starterId)];
         } else {
             return rivallyPokes[0];

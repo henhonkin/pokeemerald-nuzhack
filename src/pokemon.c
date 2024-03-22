@@ -3188,6 +3188,10 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 u32 exp_until_next_level = gExperienceTables[
                         gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][
                         GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
+                u8 level_cap = calcLevelCap();
+                u32 exp_until_next_cap = gExperienceTables[
+                        gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][
+                        level_cap + 1];
                 if (param == 0) // Rare Candy
                 {
                     dataUnsigned = exp_until_next_level;
@@ -3198,6 +3202,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     dataUnsigned = sExpCandyExperienceTable[param - 1] + GetMonData(mon, MON_DATA_EXP, NULL);
                     if (dataUnsigned > gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL])
                         dataUnsigned = gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL];
+
+                    if (dataUnsigned >= exp_until_next_cap) 
+                        dataUnsigned = exp_until_next_cap - 1;
                 }
 
                 if (calcLevelCap() <= GetMonData(mon, MON_DATA_LEVEL, NULL) && dataUnsigned >= exp_until_next_level)

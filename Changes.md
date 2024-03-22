@@ -15,3 +15,5 @@ Multihit moves are calculated using the new formula
 There is a hard levelcap, preventing levelup.
 ## Contributers
 H & U
+# TODO
+Encounter until Petalburg commit description
