@@ -207,7 +207,7 @@ Route103_EventScript_Daisy::
 	end
 
 Route103_EventScript_Rivally::
-	trainerbattle_double TRAINER_RIVALLY, Route103_Text_RivallyIntro, Route103_Text_RivallyDefeated
+	trainerbattle_single TRAINER_RIVALLY, Route103_Text_RivallyIntro, Route103_Text_RivallyDefeated
 	msgbox Route103_Text_RivallyPostBattle, MSGBOX_AUTOCLOSE
 
 Route103_EventScript_Amy::

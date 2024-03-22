@@ -93,7 +93,7 @@ extern const u8 *const gStatusConditionStringsTable[7][2];
 #define SEEDOT_STARTER 2
 #define NUM_DEFINED_STARTERS SEEDOT_STARTER +1
 
-u8 GetDefinedStarterPokemon(u8 starterId);
+u8 GetDefinedStarterPokemon(u16 starterId);
 
 static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
     [PICHU_STARTER] = {

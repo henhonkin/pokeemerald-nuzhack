@@ -252,7 +252,6 @@ LittlerootTown_EventScript_FatMan::
 
 LittlerootTown_EventScript_Boy::
 	msgbox LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
-	special ChooseSecStarter
 	end
 
 LittlerootTown_EventScript_Twin::
@@ -905,6 +904,8 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	waitfanfare
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_GiveSecondStarter, MSGBOX_DEFAULT
+	special ChooseSecStarter
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -949,14 +950,20 @@ LittlerootTown_Text_ExplainRunningShoes:
 	.string "in the great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
+	.string "…But please be careful.\n"
+	.string "If anything happens, you can come home.\p"
+	.string "Go on, go get them, honey!$"
+
+LittlerootTown_Text_GiveSecondStarter:
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "To think that you have your very own\n"
 	.string "POKéMON now…\l"
 	.string "Your father will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "But I missed my chance to give you\n"
+	.string "the POKéMON your father left you.\p"
+	.string "He left you this trio \n"
+	.string "but you can only choose one!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"
