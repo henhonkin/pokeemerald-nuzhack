@@ -2227,7 +2227,7 @@ u8 GetDefinedStarterPokemon(u16 starterId) {
 }
 
 struct TrainerMon GetMon(struct TrainerMon mon) {
-    if (mon.species == SPECIES_1024_FORM_1) {
+    if (mon.species == SPECIES_STRONG_VS_SEC_STARTER) {
         // weak against the chosen one
         u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
             | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
@@ -2242,7 +2242,7 @@ struct TrainerMon GetMon(struct TrainerMon mon) {
             return rivallyPokes[0];
         }
     }
-    if (mon.species == SPECIES_1024_FORM_2) {
+    if (mon.species == SPECIES_WEAK_VS_SEC_STARTER) {
         // Strong against the chosen one
         u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
             | (gSaveBlock2Ptr->playerTrainerId[1] << 8)

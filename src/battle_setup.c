@@ -989,7 +989,7 @@ static void CB2_GiveStarter2(void)
     u16 starterMon;
     *GetVarPointer(VAR_STARTER_MON2) = gSpecialVar_Result;
     starterMon = GetStarterPokemon2(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 5, ITEM_ORAN_BERRY, 0, 0, 0);
+    ScriptGiveMon(starterMon, 5, ITEM_ORAN_BERRY);
     ResetTasks();
     SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }

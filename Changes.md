@@ -13,7 +13,12 @@ normal -> steel
 Multihit moves are calculated using the new formula
 ### Levelcap
 There is a hard levelcap, preventing levelup.
+TODO
 ## Contributers
 H & U
 # TODO
 Encounter until Petalburg commit description
+e.g. angel
+sec starter
+exp share
+gras in oldale

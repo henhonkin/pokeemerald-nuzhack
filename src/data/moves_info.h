@@ -18175,8 +18175,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Can poison on impact. Powers\n"
             "up against poisoned foes."),
-        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
-        .power = 60,
+        .effect = EFFECT_MULTI_HIT,
+        .power = 23,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 15,
