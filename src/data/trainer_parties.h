@@ -8027,8 +8027,9 @@ static const struct TrainerMon sParty_Kent[] = {
 static const struct TrainerMon sParty_James1[] = {
     {
     .lvl = 12,
-    .species = SPECIES_TRAPINCH,
+    .species = SPECIES_NINCADA,
     .nature = NATURE_HARDY,
+    .moves = {MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_SAND_ATTACK},
     },
     {
     .lvl = 12,
