@@ -8027,27 +8027,32 @@ static const struct TrainerMon sParty_Kent[] = {
 static const struct TrainerMon sParty_James1[] = {
     {
     .lvl = 12,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_TRAPINCH,
     .nature = NATURE_HARDY,
-    .moves = {MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_SAND_ATTACK},
     },
     {
     .lvl = 12,
     .species = SPECIES_VENONAT,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_TACKLE, MOVE_CONFUSION, MOVE_SUPERSONIC, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 12,
     .species = SPECIES_PINECO,
+    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_TAKE_DOWN, MOVE_NONE},
     .nature = NATURE_HARDY,
-    .moves = {MOVE_TACKLE, MOVE_BUG_BITE, MOVE_TAKE_DOWN, MOVE_NONE},
     },
     {
     .lvl = 12,
     .species = SPECIES_PIKACHU,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_TRAPINCH,
+    .moves = {MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,    
     }
 };
 
