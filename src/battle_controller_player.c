@@ -1448,10 +1448,10 @@ static void Task_GiveExpToMon(u8 taskId)
         u8 level = GetMonData(mon, MON_DATA_LEVEL);
         u32 currExp = GetMonData(mon, MON_DATA_EXP);
         u32 nextLvlExp = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
-        if (calcLevelCap() > level) {
+        if (GetCurrentLevelCap() > level) {
             gainedExp = nextLvlExp - currExp; 
         }
-        if (calcLevelCap() <= level && currExp + gainedExp >= nextLvlExp)
+        if (GetCurrentLevelCap() <= level && currExp + gainedExp >= nextLvlExp)
         {
             gainedExp = nextLvlExp - currExp -1;
         }
@@ -1537,10 +1537,10 @@ static void Task_GiveExpWithExpBar(u8 taskId)
             currExp = GetMonData(&gPlayerParty[monId], MON_DATA_EXP);
             species = GetMonData(&gPlayerParty[monId], MON_DATA_SPECIES);
             expOnNextLvl = gExperienceTables[gSpeciesInfo[species].growthRate][level + 1];
-            if (calcLevelCap() > level) {
+            if (GetCurrentLevelCap() > level) {
                 gainedExp = expOnNextLvl - currExp; 
             }
-            if (calcLevelCap() <= level && currExp + gainedExp >= expOnNextLvl)
+            if (GetCurrentLevelCap() <= level && currExp + gainedExp >= expOnNextLvl)
             {
                 gainedExp = expOnNextLvl - currExp -1;
             }

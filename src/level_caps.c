@@ -4,11 +4,11 @@
 #include "level_caps.h"
 #include "pokemon.h"
 
-
 u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[][2] =
     {
+        {TRAINER_FLAG(TRAINER_GRUNT_PETALBURG_WOODS), 10},
         {FLAG_BADGE01_GET, 15},
         {FLAG_BADGE02_GET, 19},
         {FLAG_BADGE03_GET, 24},

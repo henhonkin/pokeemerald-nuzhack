@@ -14,6 +14,8 @@
 #endif
 #endif
 
+#define TRAINER_FLAG(id) TRAINER_FLAGS_START + id
+
 u32 GetCurrentLevelCap(void);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);
 
