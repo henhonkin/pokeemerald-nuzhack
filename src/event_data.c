@@ -254,6 +254,8 @@ u8 calcLevelCap() {
         obedienceLevel = 9;
     if (FlagGet(FLAG_VISITED_PETALBURG_CITY))
         obedienceLevel = 12;
+    if (FlagGet(1290))// TRAINER_GRUNT_PETALBURG_WOODS
+        obedienceLevel = 13;
     if (FlagGet(FLAG_VISITED_RUSTBORO_CITY))
         obedienceLevel = 15;
     if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
