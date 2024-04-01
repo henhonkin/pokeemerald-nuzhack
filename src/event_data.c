@@ -271,6 +271,6 @@ u8 calcLevelCap() {
     if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
         obedienceLevel = 70;
     if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
-        obedienceLevel = 80;
+    obedienceLevel = 80;
     return obedienceLevel;
 }
