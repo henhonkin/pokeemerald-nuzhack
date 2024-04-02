@@ -3269,25 +3269,52 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 15,
     .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .moves = {MOVE_ROCK_TOMB, MOVE_SPARK, MOVE_SAND_TOMB, MOVE_THUNDER_WAVE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
+    .species = SPECIES_LILEEP,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_INGRAIN, MOVE_SANDSTORM},
+    .ability = ABILITY_STORM_DRAIN,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
+    .species = SPECIES_SHUCKLE,
+    .moves = {MOVE_INFESTATION, MOVE_STICKY_WEB, MOVE_ACID, MOVE_NONE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
+    .species = SPECIES_KABUTO,
+    .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_TOMB, MOVE_AQUA_JET, MOVE_NONE},
+    .ability = ABILITY_BATTLE_ARMOR,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
+    .species = SPECIES_GEODUDE_ALOLAN,
+    .moves = {MOVE_SPARK, MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_SANDSTORM},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
+    .species = SPECIES_GROWLITHE_HISUIAN,
+    .moves = {MOVE_EMBER, MOVE_ROCK_TOMB, MOVE_BITE, MOVE_ROAR},
+    .ability = ABILITY_INTIMIDATE,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
     }
 };
 
