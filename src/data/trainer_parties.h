@@ -4445,16 +4445,22 @@ static const struct TrainerMon sParty_Andrew[] = {
 
 static const struct TrainerMon sParty_Ivan[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 15,
+    .species = SPECIES_FEEBAS,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
     },
     {
-    .lvl = 6,
+    .lvl = 15,
     .species = SPECIES_MAGIKARP,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
     },
     {
-    .lvl = 7,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 15,
+    .species = SPECIES_HOPPIP,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
     }
 };
 
