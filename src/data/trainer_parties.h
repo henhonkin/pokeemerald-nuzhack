@@ -6111,8 +6111,8 @@ static const struct TrainerMon sParty_GinaAndMia1[] = {
     .species = SPECIES_VULPIX,
     .heldItem = ITEM_HEAT_ROCK,
     .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
-    .nature = NATURE_HARDY,
     .ability = ABILITY_DROUGHT,
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 13,
@@ -6124,12 +6124,6 @@ static const struct TrainerMon sParty_GinaAndMia1[] = {
     .lvl = 12,
     .species = SPECIES_BELLSPROUT,
     .moves = {MOVE_VINE_WHIP, MOVE_GROWTH, MOVE_NONE, MOVE_NONE},
-    .nature = NATURE_HARDY,
-    },
-    {
-    .lvl = 13,
-    .species = SPECIES_CHARMANDER,
-    .moves = {MOVE_SCRATCH, MOVE_EMBER, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
     }
 };
@@ -6160,12 +6154,12 @@ static const struct TrainerMon sParty_GinaAndMia2[] = {
     {
     .lvl = 10,
     .species = SPECIES_DUSKULL,
-    .moves = {MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE},
     },
     {
     .lvl = 10,
     .species = SPECIES_SHROOMISH,
-    .moves = {MOVE_ABSORB, MOVE_LEECH_SEED, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_ABSORB, MOVE_LEECH_SEED, MOVE_NONE, MOVE_NONE},
     }
 };
 
