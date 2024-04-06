@@ -3270,6 +3270,14 @@ static const struct TrainerMon sParty_Drake[] = {
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .lvl = 15,
+    .species = SPECIES_SHUCKLE,
+    .moves = {MOVE_INFESTATION, MOVE_STICKY_WEB, MOVE_ACID, MOVE_NONE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
+    .gender = FEMALE,
+    },
+    {
+    .lvl = 15,
     .species = SPECIES_NOSEPASS,
     .moves = {MOVE_ROCK_TOMB, MOVE_SPARK, MOVE_SAND_TOMB, MOVE_THUNDER_WAVE},
     .ability = ABILITY_STURDY,
@@ -3281,14 +3289,6 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .species = SPECIES_LILEEP,
     .moves = {MOVE_MEGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_INGRAIN, MOVE_SANDSTORM},
     .ability = ABILITY_STORM_DRAIN,
-    .nature = NATURE_HARDY,
-    .gender = FEMALE,
-    },
-    {
-    .lvl = 15,
-    .species = SPECIES_SHUCKLE,
-    .moves = {MOVE_INFESTATION, MOVE_STICKY_WEB, MOVE_ACID, MOVE_NONE},
-    .ability = ABILITY_STURDY,
     .nature = NATURE_HARDY,
     .gender = FEMALE,
     },
