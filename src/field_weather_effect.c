@@ -2565,6 +2565,44 @@ static const u8 sWeatherCycleRoute123[WEATHER_CYCLE_LENGTH] =
     WEATHER_SUNNY,
 };
 
+#define PHASE_NONE 10
+#define PHASE_SUNNY PHASE_NONE + 45
+#define PHASE_CLOUDS PHASE_SUNNY + 20
+#define PHASE_RAIN PHASE_CLOUDS + 10
+#define PHASE_STORM PHASE_RAIN + 5
+#define PHASE_FOG PHASE_STORM + 5
+#define PHASE_SNOW PHASE_FOG + 5
+#define MINUTE_WEATHER_CYCLE PHASE_SNOW // number of steps for minutely weather cycle
+
+
+static u8 GetWeatherDefault(u8 cycle) {
+    if (cycle < PHASE_NONE)
+        return WEATHER_NONE;
+    if (cycle < PHASE_SUNNY)
+        return WEATHER_SUNNY;
+    if (cycle < PHASE_CLOUDS)
+        return WEATHER_SUNNY_CLOUDS;
+    return WEATHER_SUNNY;
+}
+
+static u8 GetWeatherVolatile(u8 cycle) {
+    if (cycle < PHASE_NONE)
+        return WEATHER_NONE;
+    if (cycle < PHASE_SUNNY)
+        return WEATHER_SUNNY;
+    if (cycle < PHASE_CLOUDS)
+        return WEATHER_SUNNY_CLOUDS;
+    if (cycle < PHASE_RAIN)
+        return WEATHER_RAIN;
+    if (cycle < PHASE_STORM)
+        return WEATHER_RAIN_THUNDERSTORM;
+    if (cycle < PHASE_FOG)
+        return WEATHER_FOG_HORIZONTAL;
+    if (cycle < PHASE_SNOW)
+        return WEATHER_SNOW;
+    return WEATHER_SUNNY;
+}
+
 static u8 TranslateWeatherNum(u8 weather)
 {
     switch (weather)
@@ -2585,16 +2623,26 @@ static u8 TranslateWeatherNum(u8 weather)
     case WEATHER_DOWNPOUR:           return WEATHER_DOWNPOUR;
     case WEATHER_UNDERWATER_BUBBLES: return WEATHER_UNDERWATER_BUBBLES;
     case WEATHER_ABNORMAL:           return WEATHER_ABNORMAL;
-    case WEATHER_ROUTE119_CYCLE:     return sWeatherCycleRoute119[gSaveBlock1Ptr->weatherCycleStage];
-    case WEATHER_ROUTE123_CYCLE:     return sWeatherCycleRoute123[gSaveBlock1Ptr->weatherCycleStage];
+    case WEATHER_ROUTE119_CYCLE:     return sWeatherCycleRoute119[gSaveBlock1Ptr->weatherCycleStage%WEATHER_CYCLE_LENGTH];
+    case WEATHER_ROUTE123_CYCLE:     return sWeatherCycleRoute123[gSaveBlock1Ptr->weatherCycleStage%WEATHER_CYCLE_LENGTH];
+    case WEATHER_DEFAULT:            return GetWeatherDefault(gSaveBlock1Ptr->weatherCycleStage);
+    case WEATHER_VOLATILE:           return GetWeatherVolatile(gSaveBlock1Ptr->weatherCycleStage);
     default:                         return WEATHER_NONE;
     }
 }
 
 void UpdateWeatherPerDay(u16 increment)
 {
+    u16 minuteDiff = increment *24 *60; //overflows after around 45 days but that should be fine
+    u16 weatherStage = gSaveBlock1Ptr->weatherCycleStage + minuteDiff;
+    weatherStage %= MINUTE_WEATHER_CYCLE;
+    gSaveBlock1Ptr->weatherCycleStage = weatherStage;
+}
+
+void UpdateWeatherPerMinute(u16 increment)
+{
     u16 weatherStage = gSaveBlock1Ptr->weatherCycleStage + increment;
-    weatherStage %= WEATHER_CYCLE_LENGTH;
+    weatherStage %= MINUTE_WEATHER_CYCLE;
     gSaveBlock1Ptr->weatherCycleStage = weatherStage;
 }
 

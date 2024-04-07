@@ -138,7 +138,19 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	callnative ShowLocData
+	msgbox Debug_ShowLocData, MSGBOX_DEFAULT
+	callnative ShowPosData
+	msgbox Debug_ShowPosData, MSGBOX_DEFAULT
+	release
 	end
+
+Debug_ShowLocData::
+	.string "Player Loc: {STR_VAR_1}.\n"
+	.string "Player LocPos: x: {STR_VAR_2} y: {STR_VAR_3}.$"
+
+Debug_ShowPosData::
+	.string "Player Pos: x: {STR_VAR_1} y: {STR_VAR_2}.$"
 
 Debug_EventScript_Script_2::
 	end

@@ -2397,6 +2397,22 @@ static void DebugAction_Util_Script_8(u8 taskId)
     Debug_DestroyMenu_Full_Script(taskId, Debug_EventScript_Script_8);
 }
 
+void ShowLocData(struct ScriptContext *ctx)
+{
+    struct WarpData* loc = &gSaveBlock1Ptr->location;
+    ConvertIntToDecimalStringN(gStringVar1, loc->mapGroup, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar2, loc->x, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar3, loc->y, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar4, 1, STR_CONV_MODE_LEFT_ALIGN, 6);
+}
+
+void ShowPosData(struct ScriptContext *ctx) {
+    struct Coords16* pos = &gSaveBlock1Ptr->pos;
+    ConvertIntToDecimalStringN(gStringVar1, pos->x, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar2, pos->y, STR_CONV_MODE_LEFT_ALIGN, 6);
+
+}
+
 // *******************************
 // Actions Flags and Vars
 static void DebugAction_FlagsVars_Flags(u8 taskId)

@@ -400,6 +400,12 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
                 i += alteringCaveId;
             }
+            if(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE104) &&
+               gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE104))
+            {
+                u16 route104YPos = gSaveBlock1Ptr->pos.y;
+                i += (route104YPos < 30);
+            }
 
             return i;
         }
