@@ -846,6 +846,7 @@ bool8 SweetScentWildEncounter(void)
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
                 return FALSE;
 
+            
             if (TryStartRoamerEncounter() == TRUE)
             {
                 BattleSetup_StartRoamerBattle();
@@ -857,7 +858,10 @@ bool8 SweetScentWildEncounter(void)
             else
                 TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
 
-            BattleSetup_StartWildBattle();
+            struct Pokemon mon1 = gEnemyParty[0];
+            TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
+            gEnemyParty[1] = mon1;
+            BattleSetup_StartDoubleWildBattle();
             return TRUE;
         }
         else if (MetatileBehavior_IsWaterWildEncounter(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)
