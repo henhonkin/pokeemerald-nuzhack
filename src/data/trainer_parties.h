@@ -89,26 +89,26 @@ static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
     .lvl = 11,
     .species = SPECIES_POOCHYENA,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_BITE, MOVE_SAND_ATTACK, MOVE_HOWL, MOVE_TACKLE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 12,
     .species = SPECIES_CLEFAIRY,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_DISARMING_VOICE, MOVE_SING, MOVE_CHARM, MOVE_POUND},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 12,
     .species = SPECIES_CYNDAQUIL,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_EMBER, MOVE_SMOKESCREEN, MOVE_TACKLE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_PSYDUCK,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_SCRATCH, MOVE_WATER_GUN, MOVE_CONFUSION, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -8069,8 +8069,8 @@ static const struct TrainerMon sParty_James1[] = {
     {
     .lvl = 12,
     .species = SPECIES_NINCADA,
-    .nature = NATURE_HARDY,
     .moves = {MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_SAND_ATTACK},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 12,
@@ -8079,7 +8079,7 @@ static const struct TrainerMon sParty_James1[] = {
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_PINECO,
     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_TAKE_DOWN, MOVE_NONE},
     .nature = NATURE_HARDY,
@@ -8094,7 +8094,7 @@ static const struct TrainerMon sParty_James1[] = {
     .lvl = 12,
     .species = SPECIES_TRAPINCH,
     .moves = {MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE, MOVE_NONE},
-    .nature = NATURE_HARDY,    
+    .nature = NATURE_HARDY,
     }
 };
 
