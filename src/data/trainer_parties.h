@@ -4176,6 +4176,7 @@ static const struct TrainerMon sParty_Josh[] = {
     .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
+    .ability = ABILITY_STURDY,
     .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
     },
     {
@@ -4203,6 +4204,8 @@ static const struct TrainerMon sParty_Tommy[] = {
     .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
+    .ability = ABILITY_STURDY,
+    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
@@ -7440,12 +7443,14 @@ static const struct TrainerMon sParty_Marc[] = {
     .iv = 0,
     .lvl = 15,
     .species = SPECIES_GEODUDE,
+    .ability = ABILITY_STURDY,
     .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 15,
     .species = SPECIES_ONIX,
+    .ability = ABILITY_STURDY,
     .moves = {MOVE_RAGE, MOVE_ROCK_THROW, MOVE_ROCK_TOMB, MOVE_NONE}
     },
     {
