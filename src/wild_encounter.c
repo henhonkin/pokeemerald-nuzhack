@@ -400,6 +400,12 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
                 i += alteringCaveId;
             }
+            if(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE104) &&
+               gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE104))
+            {
+                u16 route104YPos = gSaveBlock1Ptr->pos.y;
+                i += (route104YPos < 30);
+            }
 
             return i;
         }
@@ -846,6 +852,7 @@ bool8 SweetScentWildEncounter(void)
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
                 return FALSE;
 
+            
             if (TryStartRoamerEncounter() == TRUE)
             {
                 BattleSetup_StartRoamerBattle();
@@ -857,7 +864,10 @@ bool8 SweetScentWildEncounter(void)
             else
                 TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
 
-            BattleSetup_StartWildBattle();
+            struct Pokemon mon1 = gEnemyParty[0];
+            TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
+            gEnemyParty[1] = mon1;
+            BattleSetup_StartDoubleWildBattle();
             return TRUE;
         }
         else if (MetatileBehavior_IsWaterWildEncounter(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)

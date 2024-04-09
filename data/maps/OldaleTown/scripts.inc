@@ -75,7 +75,7 @@ OldaleTown_EventScript_GoToMartEast::
 
 OldaleTown_EventScript_ExplainPokemonMart::
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
-	giveitem ITEM_POTION
+	giveitem ITEM_HONEY 10
 	goto_if_eq VAR_RESULT, FALSE, OldaleTown_EventScript_BagIsFull
 	msgbox OldaleTown_Text_PotionExplanation, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_POTION_OLDALE
@@ -361,9 +361,9 @@ OldaleTown_Text_ThisIsAPokemonMart:
 	.string "a promotional item.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "Honey can be used to encounter more POKéMON\n"
+	.string "so you should always look out for it\l"
+	.string "everywhere.$"
 
 OldaleTown_Text_WaitDontComeInHere:
 	.string "Aaaaah! Wait!\n"

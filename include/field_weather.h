@@ -229,6 +229,7 @@ void SetSavedWeatherFromCurrMapHeader(void);
 void SetWeather(u32 weather);
 void DoCurrentWeather(void);
 void UpdateWeatherPerDay(u16 increment);
+void UpdateWeatherPerMinute(u16 increment);
 void ResumePausedWeather(void);
 
 #endif // GUARD_WEATHER_H
