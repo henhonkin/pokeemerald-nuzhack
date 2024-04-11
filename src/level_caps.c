@@ -9,6 +9,7 @@ u32 GetCurrentLevelCap(void)
     static const u32 sLevelCapFlagMap[][2] =
     {
         {FLAG_HIDE_ROUTE_103_RIVAL, 7},
+        {TRAINER_FLAG(TRAINER_CALVIN_1), 7},
 	{FLAG_VISITED_PETALBURG_CITY, 9},
         {TRAINER_FLAG(TRAINER_GRUNT_PETALBURG_WOODS), 12},
 	{FLAG_VISITED_RUSTBORO_CITY, 13},
