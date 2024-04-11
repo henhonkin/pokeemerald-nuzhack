@@ -6531,7 +6531,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
 #if P_FAMILY_DELIBIRD
 static const struct LevelUpMove sDelibirdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
-    LEVEL_UP_MOVE(25, MOVE_DRILL_PECK),
+    LEVEL_UP_MOVE(16, MOVE_DRILL_PECK),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DELIBIRD

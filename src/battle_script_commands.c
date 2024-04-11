@@ -13285,17 +13285,17 @@ static void Cmd_presentdamagecalculation(void)
      */
     if (gSpecialStatuses[gBattlerAttacker].parentalBondState != PARENTAL_BOND_2ND_HIT)
     {
-        if (rand < 102)
+        if (rand < 128) //50%
         {
-            gBattleStruct->presentBasePower = 40;
+            gBattleStruct->presentBasePower = 120;
         }
-        else if (rand < 178)
+        else if (rand < 217) //35%
         {
             gBattleStruct->presentBasePower = 80;
         }
-        else if (rand < 204)
+        else if (rand < 243) //10%
         {
-            gBattleStruct->presentBasePower = 120;
+            gBattleStruct->presentBasePower = 40;
         }
         else
         {
