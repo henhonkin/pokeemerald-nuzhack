@@ -6117,7 +6117,7 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
 
 static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
-    .lvl = 13,
+    .lvl = 12,
     .species = SPECIES_VULPIX,
     .heldItem = ITEM_HEAT_ROCK,
     .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
@@ -6133,7 +6133,7 @@ static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
     .lvl = 12,
     .species = SPECIES_BELLSPROUT,
-    .moves = {MOVE_VINE_WHIP, MOVE_GROWTH, MOVE_NONE, MOVE_NONE},
+    .moves = {MOVE_VINE_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
     }
 };
