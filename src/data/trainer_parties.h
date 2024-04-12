@@ -733,7 +733,7 @@ static const struct TrainerMon sParty_Ricky1[] = {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 13,
     .species = SPECIES_ZIGZAGOON,
-    .moves = {MOVE_SAND_ATTACK, MOVE_HEADBUTT, MOVE_TAIL_WHIP, MOVE_SURF}
+    .moves = {MOVE_SAND_ATTACK, MOVE_HEADBUTT, MOVE_TAIL_WHIP, MOVE_SURF},
     }
 };
 
@@ -7813,19 +7813,19 @@ static const struct TrainerMon sParty_Haley1[] = {
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 13,
+    .lvl = 14,
     .species = SPECIES_NIDORAN_F,
     .moves = {MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_SCRATCH, MOVE_NONE},
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 11,
+    .lvl = 13,
     .species = SPECIES_MARILL,
     .moves = {MOVE_WATER_GUN, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 13,
+    .lvl = 14,
     .species = SPECIES_NATU,
     .moves = {MOVE_PECK, MOVE_STORED_POWER, MOVE_NONE, MOVE_NONE},
     }
@@ -7958,7 +7958,7 @@ static const struct TrainerMon sParty_Crissy[] = {
 
 static const struct TrainerMon sParty_Rick[] = {
     {
-    .lvl = 9,
+    .lvl = 8,
     .species = SPECIES_WURMPLE,
     .moves = {MOVE_POISON_STING, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
