@@ -1419,23 +1419,28 @@ static const struct TrainerMon sParty_Cindy1[] = {
     {
     .lvl = 11,
     .species = SPECIES_MEOWTH,
-    .nature = NATURE_HARDY,
-    .moves = {MOVE_FAKE_OUT, MOVE_PAY_DAY, MOVE_BITE, MOVE_NONE},
     .heldItem = ITEM_NUGGET,
+    .moves = {MOVE_FAKE_OUT, MOVE_PAY_DAY, MOVE_BITE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 10,
     .species = SPECIES_HOPPIP,
-    .nature = NATURE_HARDY,
-    .moves = {MOVE_FAIRY_WIND, MOVE_TACKLE, MOVE_ABSORB, MOVE_SYNTHESIS},
     .heldItem = ITEM_NUGGET,
+    .moves = {MOVE_FAIRY_WIND, MOVE_TACKLE, MOVE_ABSORB, MOVE_SYNTHESIS},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 11,
     .species = SPECIES_VULPIX,
-    .nature = NATURE_HARDY,
-    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
     .heldItem = ITEM_NUGGET,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 11,
+    .species = SPECIES_BONSLY,
+    .moves = {MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     }
 };
 
