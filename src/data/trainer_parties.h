@@ -4178,57 +4178,57 @@ static const struct TrainerMon sParty_Billy[] = {
 
 static const struct TrainerMon sParty_Josh[] = {
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 14,
     .species = SPECIES_GEODUDE,
+    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
-    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 15,
     .species = SPECIES_LILEEP,
-    .moves = {MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_ASTONISH, MOVE_INGRAIN}
+    .moves = {MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_ASTONISH, MOVE_INGRAIN},
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 13,
     .species = SPECIES_TENTACOOL,
-    .moves = {MOVE_ACID, MOVE_WATER_PULSE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_ACID, MOVE_WATER_PULSE, MOVE_NONE, MOVE_NONE},
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 14,
     .species = SPECIES_GEODUDE_ALOLAN,
-    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_SPARK, MOVE_NONE}
+    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_SPARK, MOVE_NONE},
     }
 };
 
 static const struct TrainerMon sParty_Tommy[] = {
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 15,
     .species = SPECIES_GEODUDE,
+    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
-    .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 13,
     .species = SPECIES_SLOWPOKE,
-    .moves = {MOVE_CONFUSION, MOVE_WATER_GUN, MOVE_YAWN, MOVE_NONE}
+    .moves = {MOVE_CONFUSION, MOVE_WATER_GUN, MOVE_YAWN, MOVE_NONE},
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 15,
     .species = SPECIES_SLAKOTH,
-    .moves = {MOVE_SCRATCH, MOVE_FEINT_ATTACK, MOVE_YAWN, MOVE_SLACK_OFF}
+    .moves = {MOVE_SCRATCH, MOVE_FEINT_ATTACK, MOVE_YAWN, MOVE_SLACK_OFF},
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 14,
     .species = SPECIES_GROWLITHE,
-    .moves = {MOVE_EMBER, MOVE_BITE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_EMBER, MOVE_BITE, MOVE_NONE, MOVE_NONE},
     }
 };
 
@@ -7445,36 +7445,36 @@ static const struct TrainerMon sParty_GruntJaggedPass[] = {
 
 static const struct TrainerMon sParty_Marc[] = {
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 15,
     .species = SPECIES_GEODUDE,
+    .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
-    .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 14,
     .species = SPECIES_ONIX,
+    .moves = {MOVE_RAGE, MOVE_ROCK_TOMB, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
-    .moves = {MOVE_RAGE, MOVE_ROCK_THROW, MOVE_ROCK_TOMB, MOVE_NONE}
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 13,
     .species = SPECIES_NUMEL,
-    .moves = {MOVE_FLAME_BURST, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_FLAME_BURST, MOVE_BULLDOZE, MOVE_NONE, MOVE_NONE},
     },
     {
-    .iv = 0,
-    .lvl = 15,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 14,
     .species = SPECIES_MACHOP,
-    .moves = {MOVE_FOCUS_ENERGY, MOVE_KARATE_CHOP, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_KARATE_CHOP, MOVE_NONE, MOVE_NONE},
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 15,
     .species = SPECIES_TANGELA,
-    .moves = {MOVE_ABSORB, MOVE_BIND, MOVE_STUN_SPORE, MOVE_NONE}
+    .moves = {MOVE_ABSORB, MOVE_BIND, MOVE_STUN_SPORE, MOVE_NONE},
     }
 };
 
