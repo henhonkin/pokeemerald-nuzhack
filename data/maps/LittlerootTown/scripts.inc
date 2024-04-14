@@ -277,12 +277,18 @@ LittlerootTown_EventScript_GoSaveBirch::
 LittlerootTown_EventScript_YouSavedBirch::
 	special GetPlayerBigGuyGirlString
 	msgbox LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT
+	goto_if_unset LittlerootTown_EventScript_GiveAirBalloon
 	release
 	end
 
 LittlerootTown_EventScript_GoodLuck::
 	msgbox LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT
+	goto_if_unset LittlerootTown_EventScript_GiveAirBalloon
 	release
+	end
+
+LittlerootTown_EventScript_GiveAirBalloon::
+	giveitem ITEM_AIR_BALLOON 1
 	end
 
 LittlerootTown_EventScript_NeedPokemonTriggerLeft::
@@ -908,7 +914,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	special ChooseSecStarter
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
-	delay 30
+	@ delay 30
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
