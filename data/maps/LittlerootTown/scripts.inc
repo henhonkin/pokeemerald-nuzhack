@@ -289,6 +289,7 @@ LittlerootTown_EventScript_GoodLuck::
 
 LittlerootTown_EventScript_GiveAirBalloon::
 	giveitem ITEM_AIR_BALLOON 1
+	giveitem ITEM_TERA_ORB 1
 	setflag FLAG_RECEIVED_AIR_BALLOON
 	end
 
