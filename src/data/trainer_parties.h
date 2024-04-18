@@ -4192,9 +4192,9 @@ static const struct TrainerMon sParty_Josh[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 13,
+    .lvl = 14,
     .species = SPECIES_TENTACOOL,
-    .moves = {MOVE_ACID, MOVE_WATER_PULSE, MOVE_NONE, MOVE_NONE},
+    .moves = {MOVE_ACID, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE},
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
