@@ -1438,7 +1438,7 @@ static const struct TrainerMon sParty_Cindy1[] = {
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 11,
+    .lvl = 10,
     .species = SPECIES_BONSLY,
     .moves = {MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     }
@@ -1710,7 +1710,7 @@ static const struct TrainerMon sParty_Winston1[] = {
     .lvl = 13,
     .species = SPECIES_SPHEAL,
     .heldItem = ITEM_NUGGET,
-    .moves = {MOVE_RAGE_POWDER, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE},
+    .moves = {MOVE_WATER_GUN, MOVE_POWDER_SNOW, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
     }
 };
@@ -7990,6 +7990,7 @@ static const struct TrainerMon sParty_Rick[] = {
     .lvl = 9,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_STURDY,
     .nature = NATURE_HARDY,
     },
     {
