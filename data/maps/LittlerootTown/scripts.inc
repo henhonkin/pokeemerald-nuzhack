@@ -278,12 +278,12 @@ LittlerootTown_EventScript_YouSavedBirch::
 	special GetPlayerBigGuyGirlString
 	msgbox LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT
 	goto_if_unset FLAG_RECEIVED_AIR_BALLOON, LittlerootTown_EventScript_GiveAirBalloon
-	release
+	goto LittlerootTown_EventScript_GoodLuck
 	end
 
 LittlerootTown_EventScript_GoodLuck::
 	msgbox LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT
-	goto_if_unset FLAG_RECEIVED_AIR_BALLOON, LittlerootTown_EventScript_GiveAirBalloon
+	goto_if_unset FLAG_RECEIVED_AIR_BALLOON, LittlerootTown_EventScript_YouSavedBirch
 	release
 	end
 

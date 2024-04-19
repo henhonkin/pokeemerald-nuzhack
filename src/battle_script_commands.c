@@ -13287,19 +13287,19 @@ static void Cmd_presentdamagecalculation(void)
     {
         if (rand < 128) //50%
         {
-            gBattleStruct->presentBasePower = 120;
+            gBattleStruct->presentBasePower = 130;
         }
         else if (rand < 217) //35%
         {
-            gBattleStruct->presentBasePower = 80;
+            gBattleStruct->presentBasePower = 90;
         }
         else if (rand < 243) //10%
         {
-            gBattleStruct->presentBasePower = 40;
+            gBattleStruct->presentBasePower = 50;
         }
         else
         {
-            gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerTarget) / 4;
+            gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerTarget) / 3;
             if (gBattleMoveDamage == 0)
                 gBattleMoveDamage = 1;
             gBattleMoveDamage *= -1;
