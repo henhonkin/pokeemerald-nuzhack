@@ -909,7 +909,7 @@
           }
         },
         {
-          "map": "MAP_ROUTE104",
+          "map": "MAP_ROUTE104NORTH",
           "base_label": "gRoute104North",
           "land_mons": {
             "encounter_rate": 20,
