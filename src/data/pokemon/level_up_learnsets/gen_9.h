@@ -7385,8 +7385,6 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TREECKO
 
-// TODO: Level 40: Flammenwerfer, Level 33: Feather Dance kommen von Torchic
-
 #if P_FAMILY_TORCHIC
 static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -7395,13 +7393,13 @@ static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_FLAME_CHARGE),
     LEVEL_UP_MOVE(12, MOVE_DETECT),
+    LEVEL_UP_MOVE(14, MOVE_PECK),
     LEVEL_UP_MOVE(15, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(25, MOVE_SLASH),
     LEVEL_UP_MOVE(30, MOVE_BOUNCE),
     LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(40, MOVE_BLAZE_KICK),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(45, MOVE_BULK_UP),
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
@@ -7426,7 +7424,7 @@ static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_BOUNCE),
     LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(40, MOVE_BLAZE_KICK),
+    LEVEL_UP_MOVE(37, MOVE_BLAZE_KICK),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(45, MOVE_BULK_UP),
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
@@ -7435,6 +7433,7 @@ static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_BLAZE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
@@ -7453,7 +7452,7 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_BOUNCE),
     LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(40, MOVE_BLAZE_KICK),
+    LEVEL_UP_MOVE(37, MOVE_BLAZE_KICK),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(45, MOVE_BULK_UP),
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
@@ -7461,8 +7460,6 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORCHIC
-
-// TODO: Marshtomp mit Earthquake auf Level 1?
 
 #if P_FAMILY_MUDKIP
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
@@ -7479,15 +7476,14 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_AMNESIA),
     LEVEL_UP_MOVE(42, MOVE_SURF),
     LEVEL_UP_MOVE(49, MOVE_SCREECH),
+    LEVEL_UP_MOVE(55, MOVE_LIQUIDATION),
     LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
-    LEVEL_UP_MOVE( 1, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE( 1, MOVE_SURF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -7500,17 +7496,19 @@ static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(30, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(35, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(37, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(42, MOVE_MUDDY_WATER),
     LEVEL_UP_MOVE(49, MOVE_SCREECH),
+    LEVEL_UP_MOVE(55, MOVE_LIQUIDATION),
     LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE( 1, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_HAMMER_ARM),
-    LEVEL_UP_MOVE( 1, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE( 1, MOVE_SURF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -7525,8 +7523,8 @@ static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_AMNESIA),
     LEVEL_UP_MOVE(42, MOVE_MUDDY_WATER),
     LEVEL_UP_MOVE(49, MOVE_SCREECH),
+    LEVEL_UP_MOVE(55, MOVE_LIQUIDATION),
     LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUDKIP
