@@ -346,7 +346,7 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
         {
             approachDistance = sDirectionalApproachDistanceFuncs[i](trainerObj, trainerObj->trainerRange_berryTreeId, x, y);
             if (CheckPathBetweenTrainerAndPlayer(trainerObj, approachDistance, i + 1)) {// directions are 1-4 instead of 0-3. south north west east
-                if (trainerObj->trainerType = TRAINER_TYPE_SEE_ALL_DIRECTIONS)
+                if (trainerObj->trainerType == TRAINER_TYPE_SEE_ALL_DIRECTIONS)
                     trainerObj->facingDirection = i + 1;
                 return approachDistance;
             }
