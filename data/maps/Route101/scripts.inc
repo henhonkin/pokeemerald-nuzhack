@@ -212,6 +212,12 @@ Route101_EventScript_Youngster::
 
 Route101_EventScript_Boy::
 	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
+	goto_if_set FLAG_SMOKE_BALL_RECEIVED, Route101_EventScript_GiveSmokeBall
+	msgbox Route101_Text_SmokeBall
+	end
+
+Route101_EventScript_GiveSmokeBall::
+	giveitem ITEM_SMOKE_BALL 1
 	end
 
 Route101_EventScript_RouteSign::
@@ -295,6 +301,11 @@ Route101_Text_WildPokemonInTallGrass:
 	.string "tall grass.\p"
 	.string "If you want to catch POKéMON, you have\n"
 	.string "to go into the tall grass and search.$"
+
+Route101_Text_SmokeBall:
+	.string "Or you could use a pokemon with a\n"
+	.string "smoke ball\p"
+	.string "If you want to flee.$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
