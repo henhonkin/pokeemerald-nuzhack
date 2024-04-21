@@ -7445,36 +7445,44 @@ static const struct TrainerMon sParty_GruntJaggedPass[] = {
 
 static const struct TrainerMon sParty_Marc[] = {
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 15,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 14,
     .species = SPECIES_ONIX,
     .moves = {MOVE_RAGE, MOVE_ROCK_TOMB, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 13,
-    .species = SPECIES_NUMEL,
-    .moves = {MOVE_FLAME_BURST, MOVE_BULLDOZE, MOVE_NONE, MOVE_NONE},
+    .species = SPECIES_GEODUDE_ALOLAN,
+    .moves = {MOVE_SPARK, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 14,
-    .species = SPECIES_MACHOP,
-    .moves = {MOVE_FOCUS_ENERGY, MOVE_KARATE_CHOP, MOVE_NONE, MOVE_NONE},
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+    .lvl = 13,
+    .species = SPECIES_BONSLY,
+    .moves = {MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 15,
-    .species = SPECIES_TANGELA,
-    .moves = {MOVE_ABSORB, MOVE_BIND, MOVE_STUN_SPORE, MOVE_NONE},
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+    .lvl = 13,
+    .species = SPECIES_ARON,
+    .moves = {MOVE_METAL_CLAW, MOVE_ROCK_TOMB, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_STURDY,
+    .nature = NATURE_HARDY,
     }
 };
 
