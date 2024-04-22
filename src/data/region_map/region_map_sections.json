@@ -154,11 +154,19 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_104",
-      "name": "ROUTE 104",
+      "name": "ROUTE 104 SOUTH",
       "x": 0,
       "y": 7,
       "width": 1,
-      "height": 3
+      "height": 2
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_104_NORTH",
+      "name": "ROUTE 104 NORTH",
+      "x": 0,
+      "y": 9,
+      "width": 1,
+      "height": 1
     },
     {
       "map_section": "MAPSEC_ROUTE_105",
