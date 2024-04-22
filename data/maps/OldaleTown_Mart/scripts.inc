@@ -35,6 +35,12 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BIG_ROOT
+	.2byte ITEM_CLEANSE_TAG
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_FLOAT_STONE
+	.2byte ITEM_IRON_BALL
 	.2byte ITEM_NONE
 	release
 	end
