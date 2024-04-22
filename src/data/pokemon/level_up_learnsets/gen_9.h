@@ -4719,6 +4719,7 @@ static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 8, MOVE_RECYCLE),
+    LEVEL_UP_MOVE(10, MOVE_YAWN),
     LEVEL_UP_MOVE(12, MOVE_COVET),
     LEVEL_UP_MOVE(16, MOVE_BITE),
     LEVEL_UP_MOVE(20, MOVE_STOCKPILE),
@@ -4736,6 +4737,8 @@ static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_REST),
+    LEVEL_UP_MOVE( 0, MOVE_SLEEP_TALK),
     LEVEL_UP_MOVE( 1, MOVE_RECYCLE),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
@@ -4754,8 +4757,8 @@ static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_REST),
     LEVEL_UP_MOVE(20, MOVE_SNORE),
     LEVEL_UP_MOVE(20, MOVE_SLEEP_TALK),
-    LEVEL_UP_MOVE(24, MOVE_CRUNCH),
     LEVEL_UP_MOVE(28, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(30, MOVE_CRUNCH),
     LEVEL_UP_MOVE(32, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE(36, MOVE_AMNESIA),
     LEVEL_UP_MOVE(40, MOVE_HIGH_HORSEPOWER),
