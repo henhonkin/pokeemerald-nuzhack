@@ -1707,7 +1707,7 @@ static const struct TrainerMon sParty_Winston1[] = {
     .nature = NATURE_HARDY,
     },
     {
-    .lvl = 13,
+    .lvl = 12,
     .species = SPECIES_SPHEAL,
     .heldItem = ITEM_NUGGET,
     .moves = {MOVE_WATER_GUN, MOVE_POWDER_SNOW, MOVE_NONE, MOVE_NONE},
@@ -4131,22 +4131,21 @@ static const struct TrainerMon sParty_Calvin1[] = {
     {
     .lvl = 7,
     .species = SPECIES_POOCHYENA,
+    .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
-    .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE}
     },
     {
-      .lvl = 7,
-      .species = SPECIES_PIDGEY,
-      .nature = NATURE_HARDY,
-      .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_NONE, MOVE_NONE}
+    .lvl = 7,
+    .species = SPECIES_PIDGEY,
+    .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
-      .lvl = 7,
-      .species = SPECIES_DIGLETT,
-      .nature = NATURE_HARDY,
-      .moves = {MOVE_SCRATCH, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE}
+    .lvl = 7,
+    .species = SPECIES_DIGLETT,
+    .moves = {MOVE_SCRATCH, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
-    
 };
 
 static const struct TrainerMon sParty_Billy[] = {
@@ -4206,28 +4205,28 @@ static const struct TrainerMon sParty_Josh[] = {
 
 static const struct TrainerMon sParty_Tommy[] = {
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 15,
     .species = SPECIES_GEODUDE,
     .moves = {MOVE_TACKLE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_STURDY,
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(5, 5, 5, 5, 5, 5),
     .lvl = 13,
     .species = SPECIES_SLOWPOKE,
     .moves = {MOVE_CONFUSION, MOVE_WATER_GUN, MOVE_YAWN, MOVE_NONE},
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 15,
-    .species = SPECIES_SLAKOTH,
-    .moves = {MOVE_SCRATCH, MOVE_FEINT_ATTACK, MOVE_YAWN, MOVE_SLACK_OFF},
+    .iv = TRAINER_PARTY_IVS(5, 5, 5, 5, 5, 5),
+    .lvl = 12,
+    .species = SPECIES_ANORITH,
+    .moves = {MOVE_METAL_CLAW, MOVE_SMACK_DOWN, MOVE_FURY_CUTTER, MOVE_WATER_GUN},
     },
     {
-    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(5, 5, 5, 5, 5, 5),
     .lvl = 14,
-    .species = SPECIES_GROWLITHE,
+    .species = SPECIES_GROWLITHE_HISUIAN,
     .moves = {MOVE_EMBER, MOVE_BITE, MOVE_NONE, MOVE_NONE},
     }
 };
