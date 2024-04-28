@@ -345,8 +345,10 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "We should head back to the LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "My POKéMON is staggeringly tired…\n"
-	.string "I should have brought a POTION…$"
+	.string "I heard a former Champion hid some great\n"
+	.string "items on the other side of this river.\p"
+	.string "A lot of Trainers are looking for them.\n"
+	.string "I wish I could swim to get there!$"
 
 Route103_Text_ShortcutToOldale:
 	.string "If you cross the sea from here,\n"

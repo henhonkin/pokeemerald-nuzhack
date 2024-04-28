@@ -8035,6 +8035,7 @@ static bool32 IsBattlerModernFatefulEncounter(u32 battler)
 
 u8 IsMonDisobedient(void)
 {
+    return 0;
     s32 rnd;
     s32 calc;
     u8 obedienceLevel = 0;
