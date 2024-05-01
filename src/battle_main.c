@@ -3917,9 +3917,9 @@ static void DoBattleIntro(void)
             else
             {
                 if (B_FAST_INTRO == TRUE)
-                    *state = 15; // Wait for text to be printed.
+                    *state = 19; // Wait for text to be printed.
                 else
-                    *state = 14; // Wait for text and sprite.
+                    *state = 18; // Wait for text and sprite.
             }
         }
         break;
@@ -3934,7 +3934,46 @@ static void DoBattleIntro(void)
         if (!gBattleControllerExecFlags)
             (*state)++;
         break;
-    case 11: // first opponent's mon send out animation
+    case 11: // show the left opponents item
+        if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
+        {
+            if (gBattleMons[GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)].item != ITEM_NONE)
+            {
+                if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT)
+                    PrepareStringBattle(STRINGID_TRNRLEFTITEMYES, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
+                else
+                    PrepareStringBattle(STRINGID_TRNRPKMNITEM, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
+            }
+            else if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT)
+            {
+                if (gBattleMons[GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)].item != ITEM_NONE)
+                    PrepareStringBattle(STRINGID_TRNRLEFTITEMNO, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
+            }
+        }
+        (*state)++;
+        break;
+    case 12: // wait for item text to be printed
+        if (!gBattleControllerExecFlags)
+            (*state)++;
+        break;
+    case 13: // show the right opponnents item
+        if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
+        {
+            if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT)
+            {
+                if (gBattleMons[GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)].item != ITEM_NONE)
+                    PrepareStringBattle(STRINGID_TRNRRIGHTITEMYES, GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
+                else if (gBattleMons[GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)].item != ITEM_NONE)
+                    PrepareStringBattle(STRINGID_TRNRRIGHTITEMNO, GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
+            }
+        }
+        (*state)++;
+        break;
+    case 14: // wait for item text to be printed
+        if (!gBattleControllerExecFlags)
+            (*state)++;
+        break;
+    case 15: // first opponent's mon send out animation
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
             battler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
         else
@@ -3944,9 +3983,9 @@ static void DoBattleIntro(void)
         MarkBattlerForControllerExec(battler);
         (*state)++;
         break;
-    case 12: // nothing
+    case 16: // nothing
         (*state)++;
-    case 13: // second opponent's mon send out
+    case 17: // second opponent's mon send out
         if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
@@ -3959,19 +3998,19 @@ static void DoBattleIntro(void)
         }
         if (B_FAST_INTRO == TRUE
           && !(gBattleTypeFlags & (BATTLE_TYPE_RECORDED | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_RECORDED_IS_MASTER | BATTLE_TYPE_LINK)))
-            *state = 15; // Print at the same time as trainer sends out second mon.
+            *state = 19; // Print at the same time as trainer sends out second mon.
         else
             (*state)++;
         break;
-    case 14: // wait for opponent 2 send out
+    case 18: // wait for opponent 2 send out
         if (!gBattleControllerExecFlags)
             (*state)++;
         break;
-    case 15: // wait for wild battle message
+    case 19: // wait for wild battle message
         if (!IsBattlerMarkedForControllerExec(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)))
             (*state)++;
         break;
-    case 16: // print player sends out
+    case 20: // print player sends out
         if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
@@ -3992,7 +4031,7 @@ static void DoBattleIntro(void)
         }
         (*state)++;
         break;
-    case 17: // wait for player send out message
+    case 21: // wait for player send out message
         if (!(gBattleTypeFlags & BATTLE_TYPE_LINK && gBattleControllerExecFlags))
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
@@ -4004,7 +4043,7 @@ static void DoBattleIntro(void)
                 (*state)++;
         }
         break;
-    case 18: // player 1 send out
+    case 22: // player 1 send out
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
             battler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         else
@@ -4014,7 +4053,7 @@ static void DoBattleIntro(void)
         MarkBattlerForControllerExec(battler);
         (*state)++;
         break;
-    case 19: // player 2 send out
+    case 23: // player 2 send out
         if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
@@ -4027,7 +4066,7 @@ static void DoBattleIntro(void)
         }
         (*state)++;
         break;
-    case 20: // set dex and battle vars
+    case 24: // set dex and battle vars
         if (!gBattleControllerExecFlags)
         {
             for (battler = 0; battler < gBattlersCount; battler++)

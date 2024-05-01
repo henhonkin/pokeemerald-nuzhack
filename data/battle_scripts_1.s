@@ -209,6 +209,7 @@ BattleScript_MoveSwitchOpenPartyScreen:
 	printstring STRINGID_EMPTYSTRING3
 	waitmessage 1
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	switchinanim BS_ATTACKER, TRUE
 	waitstate
 	switchineffects BS_ATTACKER
@@ -2342,6 +2343,7 @@ BattleScript_EffectHealingWish::
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	switchinanim BS_ATTACKER, TRUE
 	waitstate
 	switchineffects BS_ATTACKER
@@ -4442,6 +4444,7 @@ BattleScript_EffectBatonPass::
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	switchinanim BS_ATTACKER, TRUE
 	waitstate
 	switchineffects BS_ATTACKER
@@ -5542,6 +5545,7 @@ BattleScript_FaintedMonTryChoose:
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	hidepartystatussummary BS_ATTACKER
 	switchinanim BS_ATTACKER, 0
 	waitstate
@@ -5554,6 +5558,7 @@ BattleScript_FaintedMonSendOutNew:
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	hidepartystatussummary BS_FAINTED
 	switchinanim BS_FAINTED, FALSE
 	waitstate
@@ -5588,6 +5593,7 @@ BattleScript_LinkHandleFaintedMonLoop::
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	hidepartystatussummary BS_FAINTED
 	switchinanim BS_FAINTED, FALSE
 	waitstate
@@ -5814,6 +5820,7 @@ BattleScript_DoSwitchOut::
 	trytoclearprimalweather
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	hidepartystatussummary BS_ATTACKER
 	switchinanim BS_ATTACKER, FALSE
 	waitstate
@@ -7626,6 +7633,7 @@ BattleScript_EmergencyExitNoPopUp::
 	switchindataupdate BS_TARGET
 	hpthresholds BS_TARGET
 	printstring STRINGID_SWITCHINMON
+	printstring STRINGID_TRNRPKMNITEM
 	switchinanim BS_TARGET, TRUE
 	waitstate
 	switchineffects BS_TARGET
