@@ -1178,6 +1178,15 @@ void PrepareStringBattle(u16 stringId, u32 battler)
      && gBattleStruct->trainerSlidePlayerMonUnaffectedMsgState != 2)
         gBattleStruct->trainerSlidePlayerMonUnaffectedMsgState = 1;
 
+    if (stringId == STRINGID_TRNRLEFTITEMYES 
+    || stringId == STRINGID_TRNRLEFTITEMNO 
+    || stringId == STRINGID_TRNRPKMNITEM 
+    ||stringId == STRINGID_TRNRRIGHTITEMNO 
+    || stringId == STRINGID_TRNRRIGHTITEMYES)
+    {
+        gLastUsedItem = gBattleMons[battler].item;
+    }
+
     BtlController_EmitPrintString(battler, BUFFER_A, stringId);
     MarkBattlerForControllerExec(battler);
 }
