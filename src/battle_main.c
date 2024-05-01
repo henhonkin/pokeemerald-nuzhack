@@ -2213,15 +2213,174 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
 u8 GetDefinedStarterPokemon(u16 starterId) {
     u16 res = NUM_DEFINED_STARTERS;
     switch (starterId) {
-        case SPECIES_PICHU:
-            res = PICHU_STARTER;
-            break;
-        case SPECIES_CATERPIE:
-            res = CATERPIE_STARTER;
-            break;
-        case SPECIES_SEEDOT:
-            res = SEEDOT_STARTER;
-            break;
+    case SPECIES_BULBASAUR:
+        res=BULBASAUR_STARTER;
+        break;
+    case SPECIES_CHARMANDER:
+        res=CHARMANDER_STARTER;
+        break;
+    case SPECIES_SQUIRTLE:
+        res=SQUIRTLE_STARTER;
+        break;
+    case SPECIES_CATERPIE:
+        res=CATERPIE_STARTER;
+        break;
+    case SPECIES_WEEDLE:
+        res=WEEDLE_STARTER;
+        break;
+    case SPECIES_PIDGEY:
+        res=PIDGEY_STARTER;
+        break;
+    case SPECIES_PICHU:
+        res=PICHU_STARTER;
+        break;
+    case SPECIES_NIDORAN_F:
+        res=NIDORAN_F_STARTER;
+        break;
+    case SPECIES_NIDORAN_M:
+        res=NIDORAN_M_STARTER;
+        break;
+    case SPECIES_CLEFFA:
+        res=CLEFFA_STARTER;
+        break;
+    case SPECIES_IGGLYBUFF:
+        res=IGGLYBUFF_STARTER;
+        break;
+    case SPECIES_ODDISH:
+        res=ODDISH_STARTER;
+        break;
+    case SPECIES_POLIWAG:
+        res=POLIWAG_STARTER;
+        break;
+    case SPECIES_ABRA:
+        res=ABRA_STARTER;
+        break;
+    case SPECIES_MACHOP:
+        res=MACHOP_STARTER;
+        break;
+    case SPECIES_BELLSPROUT:
+        res=BELLSPROUT_STARTER;
+        break;
+    case SPECIES_GEODUDE:
+        res=GEODUDE_STARTER;
+        break;
+    case SPECIES_GASTLY:
+        res=GASTLY_STARTER;
+        break;
+    case SPECIES_DRATINI:
+        res=DRATINI_STARTER;
+        break;
+    case SPECIES_CHIKORITA:
+        res=CHIKORITA_STARTER;
+        break;
+    case SPECIES_CYNDAQUIL:
+        res=CYNDAQUIL_STARTER;
+        break;
+    case SPECIES_TOTODILE:
+        res=TOTODILE_STARTER;
+        break;
+    case SPECIES_ZUBAT:
+        res=ZUBAT_STARTER;
+        break;
+    case SPECIES_MAREEP:
+        res=MAREEP_STARTER;
+        break;
+    case SPECIES_AZURILL:
+        res=AZURILL_STARTER;
+        break;
+    case SPECIES_HOPPIP:
+        res=HOPPIP_STARTER;
+        break;
+    case SPECIES_HORSEA:
+        res=HORSEA_STARTER;
+        break;
+    case SPECIES_HAPPINY:
+        res=HAPPINY_STARTER;
+        break;
+    case SPECIES_LARVITAR:
+        res=LARVITAR_STARTER;
+        break;
+    case SPECIES_TREECKO:
+        res=TREECKO_STARTER;
+        break;
+    case SPECIES_TORCHIC:
+        res=TORCHIC_STARTER;
+        break;
+    case SPECIES_MUDKIP:
+        res=MUDKIP_STARTER;
+        break;
+    case SPECIES_LOTAD:
+        res=LOTAD_STARTER;
+        break;
+    case SPECIES_SEEDOT:
+        res=SEEDOT_STARTER;
+        break;
+    case SPECIES_RALTS:
+        res=RALTS_STARTER;
+        break;
+    case SPECIES_SLAKOTH:
+        res=SLAKOTH_STARTER;
+        break;
+    case SPECIES_WHISMUR:
+        res=WHISMUR_STARTER;
+        break;
+    case SPECIES_ARON:
+        res=ARON_STARTER;
+        break;
+    case SPECIES_TRAPINCH:
+        res=TRAPINCH_STARTER;
+        break;
+    case SPECIES_SPHEAL:
+        res=SPHEAL_STARTER;
+        break;
+    case SPECIES_BAGON:
+        res=BAGON_STARTER;
+        break;
+    case SPECIES_BELDUM:
+        res=BELDUM_STARTER;
+        break;
+    case SPECIES_BUDEW:
+        res=BUDEW_STARTER;
+        break;
+    case SPECIES_MAGNEMITE:
+        res=MAGNEMITE_STARTER;
+        break;
+    case SPECIES_RHYHORN:
+        res=RHYNHORN_STARTER;
+        break;
+    case SPECIES_ELEKID:
+        res=ELEKID_STARTER;
+        break;
+    case SPECIES_MAGBY:
+        res=MAGBY_STARTER;
+        break;
+    case SPECIES_TOGEPI:
+        res=TOGEPI_STARTER;
+        break;
+    case SPECIES_SWINUB:
+        res=SWINUB_STARTER;
+        break;
+    case SPECIES_PORYGON:
+        res=PORYGON_STARTER;
+        break;
+    case SPECIES_DUSKULL:
+        res=DUSKULL_STARTER;
+        break;
+    case SPECIES_ZIGZAGOON_GALARIAN:
+        res=ZIGZAGOON_GALARIAN_STARTER;
+        break;
+    case SPECIES_MIME_JR:
+        res=MIME_JR_STARTER;
+        break;
+    case SPECIES_TEDDIURSA:
+        res=TEDDIURSA_STARTER;
+        break;
+    case SPECIES_GEODUDE_ALOLAN:
+        res=GEODUDE_ALOLAN_STARTER;
+        break;
+    case SPECIES_MANKEY:
+        res=MANKEY_STARTER;
+        break;
     };
     return res;
 }

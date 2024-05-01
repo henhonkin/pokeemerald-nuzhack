@@ -371,14 +371,22 @@ static const struct TrainerMon sParty_Daisy[] = {
     }
 };
 
-static const struct TrainerMon sParty_Rivally[] = {
+static const struct TrainerMon sParty_Rival_Scott[] = {
     {
-    .lvl = 5,
+    .lvl = 10,
     .species = SPECIES_WEAK_VS_SEC_STARTER,
     },
     {
-    .lvl = 5,
+    .lvl = 10,
     .species = SPECIES_STRONG_VS_SEC_STARTER,
+    },
+    {
+    .lvl = 10,
+    .species = SPECIES_SWINUB,
+    },
+    {
+    .lvl = 10,
+    .species = SPECIES_SLUGMA,    
     }
 };
 
