@@ -239,7 +239,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_MACHOP,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 10,
-        .moves = {MOVE_KARATE_CHOP, MOVE_LEER, MOVE_LOW_KICK, MOVE_FOCUSED_ENERGY},
+        .moves = {MOVE_KARATE_CHOP, MOVE_LEER, MOVE_LOW_KICK, MOVE_FOCUS_ENERGY},
     },
     [BELLSPROUT_STARTER] = {
         .species = SPECIES_BELLSPROUT,
