@@ -704,7 +704,10 @@ DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
 	.string "you need to set sail again!$"
 
 DewfordTown_Text_GettingItchToFish:
-	.string "This is a renowned fishing spot.\n"
+	.string "This is a renowned fishing spot.\p"
+	.string "Or rather it was.\p"
+	.string "Some idiots threw trash in.\n"
+	.string "And now you'll only ever catch GRIMER.\p"
 	.string "Are you getting the itch to fish?$"
 
 DewfordTown_Text_GiveYouOneOfMyRods:
