@@ -290,6 +290,7 @@ LittlerootTown_EventScript_GiveAirBalloon::
 	giveitem ITEM_AIR_BALLOON 1
 	setflag FLAG_RECEIVED_AIR_BALLOON
 	msgbox LittlerootTown_Text_HereHaveThis, MSGBOX_DEFAULT
+	release
 	end
 
 LittlerootTown_EventScript_NeedPokemonTriggerLeft::
