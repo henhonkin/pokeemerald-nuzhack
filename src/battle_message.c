@@ -3002,6 +3002,12 @@ void BufferStringBattle(u16 stringID, u32 battler)
     case STRINGID_TRAINERSLIDE:
         stringPtr = gBattleStruct->trainerSlideMsg;
         break;
+    case STRINGID_TRNRPKMNITEM:
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+            stringPtr = sText_TrainerMonHasItem;
+        else
+            stringPtr = sText_EmptyString4;
+        break;
     default: // load a string from the table
         if (stringID >= BATTLESTRINGS_COUNT)
         {
