@@ -7010,7 +7010,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FLAME_ORB] =
     {
         .name = _("Flame Orb"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 1500 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_FLAME_ORB,
         .description = COMPOUND_STRING(
             "A bizarre orb that\n"
@@ -7025,7 +7025,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TOXIC_ORB] =
     {
         .name = _("Toxic Orb"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 1500 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_TOXIC_ORB,
         .description = COMPOUND_STRING(
             "A bizarre orb that\n"
@@ -7371,7 +7371,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CLEANSE_TAG] =
     {
         .name = _("Cleanse Tag"),
-        .price = (I_PRICE >= GEN_7) ? 5000 : 200,
+        .price = (I_PRICE >= GEN_7) ? 500 : 200,
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sPureIncenseDesc,
         .pocket = POCKET_ITEMS,
@@ -7639,7 +7639,7 @@ const struct Item gItemsInfo[] =
     [ITEM_IRON_BALL] =
     {
         .name = _("Iron Ball"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_IRON_BALL,
         .description = COMPOUND_STRING(
             "Cuts Speed and lets\n"
@@ -7742,7 +7742,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BIG_ROOT] =
     {
         .name = _("Big Root"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 1000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_BIG_ROOT,
         .holdEffectParam = 30,
         .description = COMPOUND_STRING(
@@ -7804,7 +7804,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FLOAT_STONE] =
     {
         .name = _("Float Stone"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = (I_PRICE >= GEN_9) ? 1000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_FLOAT_STONE,
         .description = COMPOUND_STRING(
             "It's so light that\n"
