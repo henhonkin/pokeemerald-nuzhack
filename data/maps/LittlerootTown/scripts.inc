@@ -289,7 +289,8 @@ LittlerootTown_EventScript_GoodLuck::
 LittlerootTown_EventScript_GiveAirBalloon::
 	giveitem ITEM_AIR_BALLOON 1
 	setflag FLAG_RECEIVED_AIR_BALLOON
-	return
+	msgbox LittlerootTown_Text_HereHaveThis, MSGBOX_DEFAULT
+	end
 
 LittlerootTown_EventScript_NeedPokemonTriggerLeft::
 	lockall
@@ -1033,3 +1034,6 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_HereHaveThis:
+	.string "You can have my balloon!\n"
+	.string "It's so pretty!$"
