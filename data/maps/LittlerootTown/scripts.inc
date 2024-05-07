@@ -283,7 +283,7 @@ LittlerootTown_EventScript_YouSavedBirch::
 LittlerootTown_EventScript_GoodLuck::
 	msgbox LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT
 	goto_if_unset FLAG_RECEIVED_AIR_BALLOON, LittlerootTown_EventScript_GiveAirBalloon
-	release
+	releaseall
 	end
 
 LittlerootTown_EventScript_GiveAirBalloon::
