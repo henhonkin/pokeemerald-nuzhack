@@ -212,12 +212,13 @@ Route101_EventScript_Youngster::
 
 Route101_EventScript_Boy::
 	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
-	goto_if_set FLAG_SMOKE_BALL_RECEIVED, Route101_EventScript_GiveSmokeBall
-	msgbox Route101_Text_SmokeBall
+	goto_if_unset FLAG_SMOKE_BALL_RECEIVED, Route101_EventScript_GiveSmokeBall
 	end
 
 Route101_EventScript_GiveSmokeBall::
 	giveitem ITEM_SMOKE_BALL 1
+	set FLAG_SMOKE_BALL_RECEIVED
+	msgbox Route101_Text_SmokeBall, MSGBOX_NPC
 	end
 
 Route101_EventScript_RouteSign::

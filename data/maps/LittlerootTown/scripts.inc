@@ -277,7 +277,6 @@ LittlerootTown_EventScript_GoSaveBirch::
 LittlerootTown_EventScript_YouSavedBirch::
 	special GetPlayerBigGuyGirlString
 	msgbox LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT
-	goto_if_unset FLAG_RECEIVED_AIR_BALLOON, LittlerootTown_EventScript_GiveAirBalloon
 	goto LittlerootTown_EventScript_GoodLuck
 	end
 
