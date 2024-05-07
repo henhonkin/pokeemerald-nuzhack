@@ -2471,7 +2471,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            CreateMon(&party[i], curMon.species, curMon.lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+            u8 level = curMon.lvl <= 0? GetCurrentLevelCap()+curMon.lvl+10: curMon.lvl;
+            CreateMon(&party[i], curMon.species, level, 0, TRUE, personalityValue, otIdType, fixedOtId);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &curMon.heldItem);
 
             CustomTrainerPartyAssignMoves(&party[i], &curMon);

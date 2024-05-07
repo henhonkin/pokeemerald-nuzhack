@@ -191,7 +191,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_PICHU,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 10,
-        .moves = {MOVE_THUNDERSHOCK, MOVE_CHARM, MOVE_QUICK_ATTACK, MOVE_VOLT_TACKLE},
+        .moves = {MOVE_THUNDERSHOCK, MOVE_CHARM, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE},
     },
     [NIDORAN_F_STARTER] = {
         .species = SPECIES_NIDORAN_F,
