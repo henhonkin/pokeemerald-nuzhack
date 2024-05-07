@@ -3003,7 +3003,7 @@ void BufferStringBattle(u16 stringID, u32 battler)
         stringPtr = gBattleStruct->trainerSlideMsg;
         break;
     case STRINGID_TRNRPKMNITEM:
-        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER && gLastUsedItem != ITEM_NONE)
             stringPtr = sText_TrainerMonHasItem;
         else
             stringPtr = sText_EmptyString4;

@@ -4141,6 +4141,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
     .species = SPECIES_POOCHYENA,
     .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_POTION
     },
     {
     .lvl = 7,
@@ -4153,6 +4154,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
     .species = SPECIES_DIGLETT,
     .moves = {MOVE_SCRATCH, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_NONE},
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_SOFT_SAND
     }
 };
 
