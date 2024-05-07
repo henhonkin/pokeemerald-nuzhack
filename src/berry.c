@@ -2035,18 +2035,18 @@ static u8 CalcBerryYieldInternal(u16 max, u16 min, u8 water)
     u32 extraYield;
 
     if (water == 0 || OW_BERRY_MOISTURE)
-        return min;
+        return min + (Random() % (max - min +1));
     else
     {
-        randMin = (max - min) * (water - 1);
-        randMax = (max - min) * (water);
+        randMin = (max - min) * (water);
+        randMax = (max - min) * (water+1);
         rand = randMin + Random() % (randMax - randMin + 1);
 
         // Round upwards
         if ((rand % NUM_WATER_STAGES) >= NUM_WATER_STAGES / 2)
-            extraYield = rand / NUM_WATER_STAGES + 1;
+            extraYield = rand / (NUM_WATER_STAGES+1) + 1;
         else
-            extraYield = rand / NUM_WATER_STAGES;
+            extraYield = rand / (NUM_WATER_STAGES+1);
         return extraYield + min;
     }
 }
