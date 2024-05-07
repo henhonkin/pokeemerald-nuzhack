@@ -217,7 +217,7 @@ Route101_EventScript_Boy::
 
 Route101_EventScript_GiveSmokeBall::
 	giveitem ITEM_SMOKE_BALL 1
-	set FLAG_SMOKE_BALL_RECEIVED
+	setflag FLAG_SMOKE_BALL_RECEIVED
 	msgbox Route101_Text_SmokeBall, MSGBOX_NPC
 	end
 
