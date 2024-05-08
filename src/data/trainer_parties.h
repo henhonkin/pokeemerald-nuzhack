@@ -4243,7 +4243,7 @@ static const struct TrainerMon sParty_Tommy[] = {
 
 static const struct TrainerMon sParty_Joey[] = {
     {
-    .lvl = 9,
+    .lvl = -5,
     .species = SPECIES_MACHOP,
     }
 };
