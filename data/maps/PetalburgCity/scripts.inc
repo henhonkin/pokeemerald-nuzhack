@@ -785,7 +785,7 @@ PetalburgCity_Text_ScottDefeat:
 	.string "Hahaha, anyway. I'll be\n"
 	.string "watching your journey. Ciao!$"
 
-	scott trainernamen & richtiges cropping
-	scott use scaled level -2
-	petalburg bug catcher lower -> wandern und sehen und upper soll stehen
-	route 104 north wilds levelup
+	@ scott trainernamen & richtiges cropping
+	@ scott use scaled level -2
+	@ petalburg bug catcher lower -> wandern und sehen und upper soll stehen
+	@ route 104 north wilds levelup
