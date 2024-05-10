@@ -383,11 +383,13 @@ static const struct TrainerMon sParty_Rival_Scott[] = {
     {
     .lvl = 10,
     .species = SPECIES_SWINUB,
+    .moves = {MOVE_POWDER_SNOW, MOVE_MUD_SLAP, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 10,
     .species = SPECIES_SLUGMA,    
-    }
+    .moves = {MOVE_EMBER, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE}
+    },
 };
 
 static const struct TrainerMon sParty_Rose1[] = {
