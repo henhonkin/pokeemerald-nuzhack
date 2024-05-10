@@ -206,10 +206,6 @@ Route103_EventScript_Daisy::
 	msgbox Route103_Text_DaisyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route103_EventScript_Rivally::
-	trainerbattle_single TRAINER_RIVALLY, Route103_Text_RivallyIntro, Route103_Text_RivallyDefeated
-	msgbox Route103_Text_RivallyPostBattle, MSGBOX_AUTOCLOSE
-
 Route103_EventScript_Amy::
 	trainerbattle_double TRAINER_AMY_AND_LIV_1, Route103_Text_AmyIntro, Route103_Text_AmyDefeated, Route103_Text_AmyNotEnoughPokemon, Route102_EventScript_AmyRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle

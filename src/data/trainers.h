@@ -444,12 +444,12 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Daisy),
     },
 
-    [TRAINER_RIVALLY] = 
+    [TRAINER_SCOTT_1] = 
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .trainerClass = TRAINER_CLASS_SCOTT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .trainerName = _("RIVALLY"),
+        .trainerPic = TRAINER_PIC_SCOTT,
+        .trainerName = _("Scott"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

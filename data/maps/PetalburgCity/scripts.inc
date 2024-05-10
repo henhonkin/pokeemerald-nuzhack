@@ -559,6 +559,9 @@ PetalburgCity_EventScript_Scott::
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
 	closemessage
+	delay 30
+	msgbox PetalburgCity_Text_InvasiveSpecies, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_SCOTT_1, PetalburgCity_Text_ScottDefeat
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
@@ -763,5 +766,21 @@ PetalburgCity_Text_WellMaybeNot:
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "talented TRAINERS.$"
+
+PetalburgCity_Text_InvasiveSpecies:
+	.string "That's why I am leaving unusual POKéMON\n"
+	.string "everywhere. Like SWINUB and SLUGMA\l"
+	.string "on ROUTE 103.\p"
+	.string "Trainers with more experiences\n"
+	.string "while they're weak make better\l"
+	.string "participants...\p"
+	.string "Let's see if it worked on you.$"
+
+PetalburgCity_Text_ScottDefeat:
+	.string "Seems you are already quite good.\n"
+	.string "This is why it is worth it\l"
+	.string "even if some people hound me\l"
+	.string "for destroying ecosystems.\p"
+	.string "Hahaha, anyway. I'll be\n"
+	.string "watching your journey. Ciao!$"
