@@ -2410,7 +2410,7 @@ struct TrainerMon GetMon(struct TrainerMon mon) {
             | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
         u8 usedCore = otid % 64;
         u8 chosen = *GetVarPointer(VAR_STARTER_MON2);
-        u16 starterId = sStarterMon2[usedCore][(chosen-1) % STARTER_MON_COUNT];
+        u16 starterId = sStarterMon2[usedCore][(chosen+2) % STARTER_MON_COUNT];
         if (GetDefinedStarterPokemon(starterId) < NUM_DEFINED_STARTERS) {
             return rivallyPokes[GetDefinedStarterPokemon(starterId)];
         } else {
@@ -2472,7 +2472,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            u8 level = curMon.lvl <= 0? GetCurrentLevelCap()+curMon.lvl+10: curMon.lvl;
+            u8 level = curMon.lvl > 100? curMon.lvl-200+GetCurrentLevelCap(): curMon.lvl;
             CreateMon(&party[i], curMon.species, level, 0, TRUE, personalityValue, otIdType, fixedOtId);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &curMon.heldItem);
 
