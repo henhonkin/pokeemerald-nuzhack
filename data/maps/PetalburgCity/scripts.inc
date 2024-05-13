@@ -567,6 +567,7 @@ PetalburgCity_EventScript_Scott::
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
 	call_if_eq VAR_0x8008, 3, PetalburgCity_EventScript_ScottExit3
 	setvar VAR_SCOTT_PETALBURG_ENCOUNTER, 1
+	setflag FLAG_SCOTT_1
 	removeobject LOCALID_SCOTT
 	releaseall
 	end
