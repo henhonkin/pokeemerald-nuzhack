@@ -3657,9 +3657,25 @@ static const struct TrainerMon sParty_Jerry5[] = {
 
 static const struct TrainerMon sParty_Karen1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-    .lvl = 9,
+    .lvl = 200,
     .species = SPECIES_SHROOMISH,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_HEADBUTT, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_SHUPPET,
+    .moves = {MOVE_ASTONISH, MOVE_NIGHT_SHADE, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_WHISMUR,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_POUND, MOVE_ASTONISH, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_MEDITITE,
+    .moves = {MOVE_CONFUSION, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     }
 };
 
@@ -4245,7 +4261,7 @@ static const struct TrainerMon sParty_Tommy[] = {
 
 static const struct TrainerMon sParty_Joey[] = {
     {
-    .lvl = -5,
+    .lvl = 195,
     .species = SPECIES_MACHOP,
     }
 };
