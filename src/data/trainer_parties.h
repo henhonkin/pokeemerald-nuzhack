@@ -8271,8 +8271,24 @@ static const struct TrainerMon sParty_Alan[] = {
 
 static const struct TrainerMon sParty_Clark[] = {
     {
-    .lvl = 8,
-    .species = SPECIES_GEODUDE,
+    .lvl = 16,
+    .species = SPECIES_DIGLETT,
+    .moves = {MOVE_BULLDOZE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 198,
+    .species = SPECIES_MACHOP,
+    .moves = {MOVE_LOW_SWEEP, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 199,
+    .species = SPECIES_NUMEL,
+    .moves = {MOVE_TACKLE, MOVE_BULLDOZE, MOVE_EMBER, MOVE_NONE},
+    },
+    {
+    .lvl = 198,
+    .species = SPECIES_LARVITAR,
+    .moves = {MOVE_BITE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
     }
 };
 
