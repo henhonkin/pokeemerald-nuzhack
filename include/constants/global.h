@@ -58,8 +58,7 @@
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 500
-#define PC_ITEMS_SMALL_COUNT 255 // for the API where the count is a u8 see rom header gf
+#define PC_ITEMS_COUNT 255
 #define BAG_ITEMS_COUNT 90
 #define BAG_KEYITEMS_COUNT 30
 #define BAG_POKEBALLS_COUNT 16
