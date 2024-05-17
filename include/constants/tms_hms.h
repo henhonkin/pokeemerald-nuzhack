@@ -52,7 +52,18 @@
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
-    F(TRICK_ROOM)
+    F(TRICK_ROOM) \
+    F(CRUNCH) \
+    F(POISON_JAB) \
+    F(LIQUIDATION) \
+    F(FLIP_TURN) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) \
+    F(THUNDER_PUNCH) \
+    F(STEALTH_ROCK) \
+    F(DRAINING_KISS) \
+    F(DAZZLING_GLEAM) \
+    F(PLAY_ROUGH)
 
 #define FOREACH_HM(F) \
     F(CUT) \
