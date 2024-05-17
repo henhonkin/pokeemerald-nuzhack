@@ -57,6 +57,8 @@
     F(POISON_JAB) \
     F(LIQUIDATION) \
     F(FLIP_TURN) \
+    F(U_TURN) \
+    F(VOLT_SWITCH) \
     F(FIRE_PUNCH) \
     F(ICE_PUNCH) \
     F(THUNDER_PUNCH) \
