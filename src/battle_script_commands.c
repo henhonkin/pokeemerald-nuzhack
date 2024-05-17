@@ -13339,7 +13339,7 @@ static void Cmd_presentdamagecalculation(void)
     {
         if (rand < 128) //50%
         {
-            gBattleStruct->presentBasePower = 130;
+            gBattleStruct->presentBasePower = 200;
         }
         else if (rand < 217) //35%
         {
