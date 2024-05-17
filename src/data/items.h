@@ -10111,7 +10111,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "The user attacks\n"
             "with a punch that\n"
-            "may freeze the foe.")
+            "may freeze the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
