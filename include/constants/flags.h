@@ -1383,7 +1383,7 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_SCOTT_1                                (SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_SCOTT_1                                (SYSTEM_FLAGS + 0x21) // Petalburg Fight
 #define FLAG_SCOTT_2                                (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_SCOTT_3                                (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_SCOTT_4                                (SYSTEM_FLAGS + 0x24) // Unused Flag

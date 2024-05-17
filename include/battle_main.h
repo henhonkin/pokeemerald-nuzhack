@@ -449,7 +449,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_PORYGON,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_TACKLE, MOVE_CONVERSION, MOVE_AGILITY, MOVE_RECOVER},
+        .moves = {MOVE_TACKLE, MOVE_CONVERSION, MOVE_AGILITY, MOVE_NONE},
     },
     [DUSKULL_STARTER] = {
         .species = SPECIES_DUSKULL,
