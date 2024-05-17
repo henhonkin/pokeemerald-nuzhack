@@ -785,3 +785,4 @@ PetalburgCity_Text_ScottDefeat:
 	.string "for destroying ecosystems.\p"
 	.string "Hahaha, anyway. I'll be\n"
 	.string "watching your journey. Ciao!$"
+	
