@@ -9859,12 +9859,25 @@ static const struct TrainerMon sParty_Devan[] = {
 
 static const struct TrainerMon sParty_Johnson[] = {
     {
-    .lvl = 8,
-    .species = SPECIES_SHROOMISH,
+    .lvl = 200,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_PECK, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     },
     {
-    .lvl = 8,
+    .lvl = 200,
     .species = SPECIES_LOTAD,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_WATER_GUN, MOVE_ASTONISH, MOVE_NONE},
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_NIDORAN_M,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_PECK, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_SANDSHREW_ALOLAN,
+    .moves = {MOVE_POWDER_SNOW, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE},
     }
 };
 
