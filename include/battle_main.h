@@ -173,7 +173,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_CATERPIE,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_BUG_BITE, MOVE_POISON_STING},
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_BUG_BITE, MOVE_NONE},
     },
     [WEEDLE_STARTER] = {
         .species = SPECIES_WEEDLE,
@@ -185,7 +185,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_PIDGEY,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK},
+        .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_QUICK_ATTACK, MOVE_NONE},
     },
     [PICHU_STARTER] = {
         .species = SPECIES_PICHU,
@@ -209,7 +209,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_CLEFFA,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_POUND, MOVE_ENCORE, MOVE_SING, MOVE_METRONOME},
+        .moves = {MOVE_POUND, MOVE_ENCORE, MOVE_SING, MOVE_NONE},
     },
     [IGGLYBUFF_STARTER] = {
         .species = SPECIES_IGGLYBUFF,
@@ -239,7 +239,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_MACHOP,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_KARATE_CHOP, MOVE_LEER, MOVE_LOW_KICK, MOVE_FOCUS_ENERGY},
+        .moves = {MOVE_SEISMIC_TOSS, MOVE_LEER, MOVE_LOW_KICK, MOVE_FOCUS_ENERGY},
     },
     [BELLSPROUT_STARTER] = {
         .species = SPECIES_BELLSPROUT,
@@ -251,19 +251,19 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_GEODUDE,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_POLISH},
+        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_SANDSTORM, MOVE_ROCK_POLISH},
     },
     [GASTLY_STARTER] = {
         .species = SPECIES_GASTLY,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_LICK, MOVE_SPITE, MOVE_MEAN_LOOK, MOVE_CURSE},
+        .moves = {MOVE_LICK, MOVE_SPITE, MOVE_NONE, MOVE_CURSE},
     },
     [DRATINI_STARTER] = {
         .species = SPECIES_DRATINI,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_WRAP, MOVE_LEER, MOVE_THUNDER_WAVE, MOVE_DRAGON_RAGE},
+        .moves = {MOVE_WRAP, MOVE_LEER, MOVE_THUNDER_WAVE, MOVE_NONE},
     },
     [CHIKORITA_STARTER] = {
         .species = SPECIES_CHIKORITA,
@@ -317,7 +317,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_HAPPINY,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_POUND, MOVE_CHARM, MOVE_COPYCAT, MOVE_REFRESH},
+        .moves = {MOVE_POUND, MOVE_CHARM, MOVE_COPYCAT, MOVE_NONE},
     },
     [LARVITAR_STARTER] = {
         .species = SPECIES_LARVITAR,
@@ -377,13 +377,13 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_ARON,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_METAL_CLAW, MOVE_ROCK_TOMB},
+        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_NONE, MOVE_NONE},
     },
     [TRAPINCH_STARTER] = {
         .species = SPECIES_TRAPINCH,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_BITE, MOVE_SAND_ATTACK, MOVE_FEINT_ATTACK, MOVE_DIG},
+        .moves = {MOVE_BITE, MOVE_SAND_ATTACK, MOVE_FEINT_ATTACK, MOVE_MUD_SLAP},
     },
     [SPHEAL_STARTER] = {
         .species = SPECIES_SPHEAL,
@@ -395,7 +395,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_BAGON,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_RAGE, MOVE_BITE, MOVE_LEER, MOVE_HEADBUTT},
+        .moves = {MOVE_RAGE, MOVE_BITE, MOVE_LEER, MOVE_TACKLE},
     },
     [BELDUM_STARTER] = {
         .species = SPECIES_BELDUM,
@@ -419,19 +419,19 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_RHYHORN,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_HORN_ATTACK, MOVE_STOMP, MOVE_TAIL_WHIP, MOVE_FURY_ATTACK},
+        .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_TAIL_WHIP, MOVE_FURY_ATTACK},
     },
     [ELEKID_STARTER] = {
         .species = SPECIES_ELEKID,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_THUNDERPUNCH, MOVE_SCREECH},
+        .moves = {MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_THUNDER_SHOCK, MOVE_SCREECH},
     },
     [MAGBY_STARTER] = {
         .species = SPECIES_MAGBY,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_EMBER, MOVE_LEER, MOVE_SMOKESCREEN, MOVE_FIRE_PUNCH},
+        .moves = {MOVE_EMBER, MOVE_LEER, MOVE_SMOKESCREEN, MOVE_NONE},
     },
     [TOGEPI_STARTER] = {
         .species = SPECIES_TOGEPI,
@@ -443,7 +443,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_SWINUB,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_POWDER_SNOW, MOVE_MUD_SLAP, MOVE_ENDURE, MOVE_MUD_BOMB},
+        .moves = {MOVE_POWDER_SNOW, MOVE_MUD_SLAP, MOVE_ENDURE, MOVE_NONE},
     },
     [PORYGON_STARTER] = {
         .species = SPECIES_PORYGON,
@@ -486,7 +486,7 @@ static const struct TrainerMon rivallyPokes[NUM_DEFINED_STARTERS] = {
         .species = SPECIES_MANKEY,
         .heldItem = FIRST_SCOTT_FIGHT_ITEM_1,
         .lvl = 200,
-        .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_LOW_KICK, MOVE_KARATE_CHOP},
+        .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS},
     },
 };
 
