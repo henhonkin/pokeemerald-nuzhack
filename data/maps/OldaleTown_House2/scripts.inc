@@ -10,11 +10,12 @@ OldaleTown_House2_EventScript_Man::
 	end
 
 OldaleTown_House2_Text_PokemonLevelUp:
-	.string "When POKéMON battle, they eventually\n"
-	.string "level up and become stronger.$"
+	.string "I taught MUNCHLAX BODYSLAM...\l"
+	.string "And it evolved!$"
 
 OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon:
-	.string "If the POKéMON with you become\n"
-	.string "stronger, you'll be able to go farther\l"
-	.string "away from here.$"
+	.string "I caught a MUNCHLAX for it's LEFTOVERS\n"
+	.string "But it only had an ORAN BERRY.\l"
+	.string "Such a bummer!\l"
+	.string "My mother is now looking after it.$"
 
