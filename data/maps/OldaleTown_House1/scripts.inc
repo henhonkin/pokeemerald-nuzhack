@@ -6,10 +6,12 @@ OldaleTown_House1_EventScript_Woman::
 	end
 
 OldaleTown_House1_Text_LeftPokemonGoesOutFirst:
-	.string "When a POKéMON battle starts, the one\n"
-	.string "at the left of the list goes out first.\p"
-	.string "So, when you get more POKéMON in your\n"
-	.string "party, try switching around the order\l"
-	.string "of your POKéMON.\p"
-	.string "It could give you an advantage.$"
+	.string "When a POKéMON battle ends, all used\n"
+	.string "items except berries are restored.\p"
+	.string "Even when you switch it away with\n"
+	.string "TRICK, you'll get it back!\p"
+	.string "Don't worry, everyone here is nice,\n"
+	.string "they return your items if they stole\l"
+	.string "them.\p"
+	.string "You are doing the same, right?$"
 
