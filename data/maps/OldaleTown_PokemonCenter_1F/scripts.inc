@@ -23,7 +23,17 @@ OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Boy::
-	msgbox OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC
+	msgbox OldaleTown_PokemonCenter_1F_Text_ChoiceSpecs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_PokemonCenter_1F_EventScript_GiveChoiceSpecs
+	goto_if_eq VAR_RESULT, NO, OldaleTown_PokemonCenter_1F_EventScript_NotGiveChoiceSpecs
+	end
+
+OldaleTown_PokemonCenter_1F_EventScript_GiveChoiceSpecs::
+	msgbox OldaleTown_PokemonCenter_1F_Text_GiveChoiceSpecs, MSGBOX_NPC
+	end
+
+OldaleTown_PokemonCenter_1F_EventScript_NotGiveChoiceSpecs::
+	msgbox OldaleTown_PokemonCenter_1F_Text_NotGiveChoiceSpecs, MSGBOX_NPC
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Girl::
@@ -42,23 +52,34 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
 	.string "That PC in the corner there is\n"
 	.string "for any POKéMON TRAINER to use.\p"
-	.string "Naturally, that means you're welcome\n"
-	.string "to use it, too.$"
+	.string "It has expanded item space.\p"
+	.string "If you fill it anyways,\p"
+	.string "STOP HOARDING!$"
 
-OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
-	.string "POKéMON CENTERS are great!\p"
-	.string "You can use their services as much\n"
-	.string "as you like, and it's all for free.\l"
-	.string "You never have to worry!$"
-
+OldaleTown_PokemonCenter_1F_Text_ChoiceSpecs:
+	.string "I got some CHOICE SPECS.\n"
+	.string "Do you want to have them?$"
+	
+OldaleTown_PokemonCenter_1F_Text_GiveChoiceSpecs:
+	.string "Haha.\p"
+	.string "No.\p"
+	.string "I went to so much trouble getting\n"
+	.string "them, I'm not giving them away\l"
+	.string "for free.$"
+	
+OldaleTown_PokemonCenter_1F_Text_NotGiveChoiceSpecs:
+	.string "Really? You don't want them?$"
+	
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
 	.string "The POKéMON WIRELESS CLUB on\n"
 	.string "the second floor was built recently.\p"
 	.string "But they say they're still making\n"
-	.string "adjustments.$"
+	.string "adjustments.\p"
+	.string "Supposedly.$"
 
 OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 	.string "The POKéMON WIRELESS CLUB on\n"
 	.string "the second floor was built recently.\p"
-	.string "I traded POKéMON right away.$"
+	.string "I traded POKéMON right away.\p"
+        .string "Supposedly.$"
 
