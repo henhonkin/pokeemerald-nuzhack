@@ -90,11 +90,22 @@ PetalburgCity_EventScript_Boy::
 	lock
 	faceplayer
 	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RECEIVED_DESTINY_KNOT PetalburgCity_EventScript_Knot
 	closemessage
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
+
+PetalburgCity_EventScript_Knot::
+	giveitem ITEM_DESTINY_KNOT 1
+	msgbox PetalburgCity_Text_ReflectFeelings, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
 
 PetalburgCity_EventScript_WallysMom::
 	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
@@ -733,7 +744,11 @@ PetalburgCity_Text_WaterReflection:
 	.string "It's a shining grin full of hope…\p"
 	.string "Or it could be a look of somber silence\n"
 	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "What do you see reflected in your face?\p"
+
+PetalburgCity_Text_ReflectFeelings:
+	.string "This will reflect the feelings of\n"
+	.string "your POKéMON on their opponent.$"
 
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Some Joker let some Slugma\n"
@@ -785,4 +800,5 @@ PetalburgCity_Text_ScottDefeat:
 	.string "for destroying ecosystems.\p"
 	.string "Hahaha, anyway. I'll be\n"
 	.string "watching your journey. Ciao!$"
+
 	
