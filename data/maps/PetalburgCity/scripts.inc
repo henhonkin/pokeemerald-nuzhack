@@ -731,6 +731,9 @@ PetalburgCity_Text_AreYouRookieTrainer:
 	.string "do when they reach a new town?\p"
 	.string "They first check what kind of GYM\n"
 	.string "is in the town.$"
+	
+	@secondly they check mart
+	@ Excel für tms und excel für evos
 
 PetalburgCity_Text_ThisIsPetalburgGym:
 	.string "See? This is PETALBURG CITY's GYM.$"

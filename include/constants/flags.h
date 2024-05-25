@@ -654,9 +654,9 @@
 
 #define FLAG_UNUSED_0x264  0x264 // used Flag for item bag use
 #define FLAG_UNUSED_0x265  0x265 // used Flag for exp share
-#define FLAG_RECEIVED_AIR_BALLOON  0x266 
-#define FLAG_SMOKE_BALL_RECEIVED   0x267 
-#define FLAG_RECEIVED_DESTINY  0x268 // Unused Flag
+#define FLAG_RECEIVED_AIR_BALLOON   0x266 
+#define FLAG_SMOKE_BALL_RECEIVED    0x267 
+#define FLAG_RECEIVED_DESTINY_KNOT  0x268
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
