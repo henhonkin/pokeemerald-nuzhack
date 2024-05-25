@@ -717,8 +717,8 @@ DewfordTown_Text_GiveYouOneOfMyRods:
 	.string "into the bin.$"
 
 DewfordTown_Text_ThrowInFishingAdvice:
-	.string "It's a easy to use rod where even a\n"
-	.string "beginner can catch something.\l"
+	.string "It's a easy-to-use rod. Even a beginner\n"
+	.string "like you can catch something with it.\l"
 	.string "Feel free to try it out.$"
 
 DewfordTown_Text_ThatsTooBadThen:
