@@ -1010,16 +1010,20 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "of the sea?$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
-	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+	.string "In the past this road lead right to\n"
+	.string "Rustboro City!\p"
+	.string "But then the forest was restored,\n"
+	.string "separating ROUTE 104 into two\l"
+	.string "completely distinct routes.\p"
+	.string "ROUTE 104 SOUTH with the beach and\n"
+	.string "ROUTE 104 NORTH with a pond!$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
-	.string "You're a thief if you try to steal\n"
-	.string "someone else's POKéMON.\p"
-	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+	.string "Humans have a hard time getting here.\n"
+	.string "That's why rare flowers can bloom.\p"
+	.string "Sometimes powder from the bugs\n"
+	.string "in the forest get accumulated\l"
+	.string "to silver powder in the flower field.$"
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
