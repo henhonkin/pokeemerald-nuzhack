@@ -1449,7 +1449,9 @@ static const struct TrainerMon sParty_Cindy1[] = {
     },
     {
     .lvl = 10,
+    .nature = NATURE_HARDY,
     .species = SPECIES_BONSLY,
+    .heldItem = ITEM_NUGGET,
     .moves = {MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     }
 };
@@ -4159,7 +4161,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
     .species = SPECIES_POOCHYENA,
     .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
-    .heldItem = ITEM_POTION
+    .heldItem = ITEM_ORAN_BERRY
     },
     {
     .lvl = 7,
@@ -4181,6 +4183,7 @@ static const struct TrainerMon sParty_Billy[] = {
     .lvl = 11,
     .species = SPECIES_SEEDOT,
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_HONEY,
     .moves = {MOVE_TACKLE, MOVE_ABSORB, MOVE_ASTONISH, MOVE_NONE}
     },
     {
@@ -4199,6 +4202,7 @@ static const struct TrainerMon sParty_Billy[] = {
     .lvl = 11,
     .species = SPECIES_ZIGZAGOON,
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_FIGY_BERRY,
     .moves = {MOVE_HEADBUTT, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
@@ -7829,7 +7833,9 @@ static const struct TrainerMon sParty_Tiana[] = {
     .lvl = 9,
     .species = SPECIES_RALTS,
     .nature = NATURE_TIMID,
-    .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_NONE, MOVE_NONE},
+    .heldItem = ITEM_LUXURY_BALL,
+    .ball = BALL_LUXURY
     },
     {
     .lvl = 9,
@@ -8020,6 +8026,7 @@ static const struct TrainerMon sParty_Rick[] = {
     .species = SPECIES_LEDYBA,
     .moves = {MOVE_SUPERSONIC, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_HONEY,
     },
     {
     .lvl = 9,
@@ -8033,6 +8040,7 @@ static const struct TrainerMon sParty_Rick[] = {
     .species = SPECIES_SURSKIT,
     .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_HARDY,
+    .heldItem = ITEM_HONEY,
     }
 };
 
@@ -9292,6 +9300,7 @@ static const struct TrainerMon sParty_Darian[] = {
     .lvl = 15,
     .nature = NATURE_HARDY,
     .species = SPECIES_MAGIKARP,
+    .heldItem = ITEM_FULL_INCENSE,
     .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     }
 };
