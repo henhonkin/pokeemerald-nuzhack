@@ -2,6 +2,7 @@ static const struct TrainerMon sParty_Sawyer1[] = {
     {
     .lvl = 21,
     .species = SPECIES_GEODUDE,
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -8279,24 +8280,34 @@ static const struct TrainerMon sParty_Alan[] = {
 
 static const struct TrainerMon sParty_Clark[] = {
     {
-    .lvl = 16,
+    .lvl = 200,
     .species = SPECIES_DIGLETT,
     .moves = {MOVE_BULLDOZE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 198,
     .species = SPECIES_MACHOP,
     .moves = {MOVE_LOW_SWEEP, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_ZUBAT,
+    .moves = {MOVE_POISON_FANG, MOVE_ASTONISH, MOVE_ABSORB, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 199,
     .species = SPECIES_NUMEL,
     .moves = {MOVE_TACKLE, MOVE_BULLDOZE, MOVE_EMBER, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 198,
     .species = SPECIES_LARVITAR,
     .moves = {MOVE_BITE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -9869,24 +9880,33 @@ static const struct TrainerMon sParty_Devan[] = {
 static const struct TrainerMon sParty_Johnson[] = {
     {
     .lvl = 200,
-    .species = SPECIES_TAILLOW,
-    .heldItem = ITEM_SHARP_BEAK,
+    .species = SPECIES_SWABLU,
     .moves = {MOVE_PECK, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_LOTAD,
     .moves = {MOVE_MEGA_DRAIN, MOVE_WATER_GUN, MOVE_ASTONISH, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_NIDORAN_M,
     .moves = {MOVE_DOUBLE_KICK, MOVE_PECK, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_SANDSHREW_ALOLAN,
     .moves = {MOVE_POWDER_SNOW, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_SANDSHREW,
+    .moves = {MOVE_POISON_STING, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
