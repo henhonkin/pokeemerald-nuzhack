@@ -164,8 +164,32 @@ static const struct TrainerMon sParty_Declan[] = {
 
 static const struct TrainerMon sParty_GruntRusturfTunnel[] = {
     {
-    .lvl = 11,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 16,
+    .species = SPECIES_WOOPER,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_STARYU,
+    .moves = {MOVE_WATER_GUN, MOVE_RAPID_SPIN, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_LOMBRE,
+    .moves = {MOVE_WATER_GUN, MOVE_MEGA_DRAIN, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_SWIFT_SWIM,
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_WINGULL,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_WATER_GUN, MOVE_WING_ATTACK, MOVE_RAIN_DANCE, MOVE_NONE},
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_HARDY,
     }
 };
 

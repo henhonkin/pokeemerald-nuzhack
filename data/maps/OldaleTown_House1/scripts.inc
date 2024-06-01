@@ -11,7 +11,9 @@ OldaleTown_House1_Text_LeftPokemonGoesOutFirst:
 	.string "Even when you switch it away with\n"
 	.string "TRICK, you'll get it back!\p"
 	.string "Don't worry, everyone here is nice,\n"
-	.string "they return your items if they stole\l"
-	.string "them.\p"
-	.string "You are doing the same, right?$"
+	.string "they will return your items if they\l"
+	.string "stole them.\p"
+	.string "They're so stupid!\p"
+	.string "I bought this house with stolen items\n"
+	.string "alone!$"
 
