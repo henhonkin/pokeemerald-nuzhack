@@ -4567,9 +4567,28 @@ static const struct TrainerMon sParty_Elliot1[] = {
 
 static const struct TrainerMon sParty_Ned[] = {
     {
-    .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-    .lvl = 11,
+    .lvl = 200,
     .species = SPECIES_TENTACOOL,
+    .moves = {MOVE_WATER_PULSE, MOVE_ACID, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_POLIWAG,
+    .moves = {MOVE_AQUA_JET, MOVE_HYPNOSIS, MOVE_MUD_SHOT, MOVE_WATER_GUN},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 199,
+    .species = SPECIES_TANGELA,
+    .moves = {MOVE_VINE_WHIP, MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_PHANPY,
+    .moves = {MOVE_BULLDOZE, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 

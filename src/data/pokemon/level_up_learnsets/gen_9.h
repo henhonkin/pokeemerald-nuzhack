@@ -1808,7 +1808,6 @@ static const struct LevelUpMove sArcanineHisuianLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GROWLITHE
 
-// TODO: Braucht Poliwag was besseres als Aquaknarre für Roxanne?
 #if P_FAMILY_POLIWAG
 static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
