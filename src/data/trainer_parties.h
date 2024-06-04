@@ -2,6 +2,7 @@ static const struct TrainerMon sParty_Sawyer1[] = {
     {
     .lvl = 21,
     .species = SPECIES_GEODUDE,
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -163,8 +164,32 @@ static const struct TrainerMon sParty_Declan[] = {
 
 static const struct TrainerMon sParty_GruntRusturfTunnel[] = {
     {
-    .lvl = 11,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 16,
+    .species = SPECIES_WOOPER,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_STARYU,
+    .moves = {MOVE_WATER_GUN, MOVE_RAPID_SPIN, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_LOMBRE,
+    .moves = {MOVE_WATER_GUN, MOVE_MEGA_DRAIN, MOVE_NONE, MOVE_NONE},
+    .ability = ABILITY_SWIFT_SWIM,
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_WINGULL,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_WATER_GUN, MOVE_WING_ATTACK, MOVE_RAIN_DANCE, MOVE_NONE},
+    .ability = ABILITY_RAIN_DISH,
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -4542,9 +4567,28 @@ static const struct TrainerMon sParty_Elliot1[] = {
 
 static const struct TrainerMon sParty_Ned[] = {
     {
-    .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-    .lvl = 11,
+    .lvl = 200,
     .species = SPECIES_TENTACOOL,
+    .moves = {MOVE_WATER_PULSE, MOVE_ACID, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_POLIWAG,
+    .moves = {MOVE_AQUA_JET, MOVE_HYPNOSIS, MOVE_MUD_SHOT, MOVE_WATER_GUN},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 199,
+    .species = SPECIES_TANGELA,
+    .moves = {MOVE_VINE_WHIP, MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_PHANPY,
+    .moves = {MOVE_BULLDOZE, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -8279,24 +8323,34 @@ static const struct TrainerMon sParty_Alan[] = {
 
 static const struct TrainerMon sParty_Clark[] = {
     {
-    .lvl = 16,
+    .lvl = 200,
     .species = SPECIES_DIGLETT,
     .moves = {MOVE_BULLDOZE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 198,
     .species = SPECIES_MACHOP,
     .moves = {MOVE_LOW_SWEEP, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_ZUBAT,
+    .moves = {MOVE_POISON_FANG, MOVE_ASTONISH, MOVE_ABSORB, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 199,
     .species = SPECIES_NUMEL,
     .moves = {MOVE_TACKLE, MOVE_BULLDOZE, MOVE_EMBER, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 198,
     .species = SPECIES_LARVITAR,
     .moves = {MOVE_BITE, MOVE_ROCK_THROW, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -9869,24 +9923,33 @@ static const struct TrainerMon sParty_Devan[] = {
 static const struct TrainerMon sParty_Johnson[] = {
     {
     .lvl = 200,
-    .species = SPECIES_TAILLOW,
-    .heldItem = ITEM_SHARP_BEAK,
+    .species = SPECIES_SWABLU,
     .moves = {MOVE_PECK, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_LOTAD,
     .moves = {MOVE_MEGA_DRAIN, MOVE_WATER_GUN, MOVE_ASTONISH, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_NIDORAN_M,
     .moves = {MOVE_DOUBLE_KICK, MOVE_PECK, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
     .lvl = 200,
     .species = SPECIES_SANDSHREW_ALOLAN,
     .moves = {MOVE_POWDER_SNOW, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_SANDSHREW,
+    .moves = {MOVE_POISON_STING, MOVE_SCRATCH, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 

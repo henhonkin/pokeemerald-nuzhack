@@ -712,7 +712,7 @@ DewfordTown_Text_GettingItchToFish:
 	.string "Do you want it?$"
 
 DewfordTown_Text_GiveYouOneOfMyRods:
-	.string "Maybe it can still be usefull for you.\n"
+	.string "Maybe it can still be useful for you.\n"
 	.string "I'm just happy I don't have to throw it\l"
 	.string "into the bin.$"
 
