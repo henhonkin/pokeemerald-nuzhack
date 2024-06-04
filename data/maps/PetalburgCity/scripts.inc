@@ -99,6 +99,7 @@ PetalburgCity_EventScript_Boy::
 
 PetalburgCity_EventScript_Knot::
 	giveitem ITEM_DESTINY_KNOT 1
+	setflag FLAG_RECEIVED_DESTINY_KNOT
 	msgbox PetalburgCity_Text_ReflectFeelings, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
@@ -299,6 +300,7 @@ PetalburgCity_EventScript_ShowGymToPlayer::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox PetalburgCity_Text_ThisIsGymSign, MSGBOX_DEFAULT
+	msgbox PetalBurgCity_Text_GoShop, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyWalkAway
 	waitmovement 0
@@ -717,6 +719,7 @@ PetalburgCity_Movement_PlayerWatchScottExit3:
 
 PetalburgCity_EventScript_GymBoy::
 	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
+	msgbox PetalBurgCity_Text_GoShop, MSGBOX_NPC
 	end
 
 PetalburgCity_Text_WhereIsWally:
@@ -732,15 +735,16 @@ PetalburgCity_Text_AreYouRookieTrainer:
 	.string "They first check what kind of GYM\n"
 	.string "is in the town.$"
 	
-	@secondly they check mart
-	@ Excel für tms und excel für evos
-
 PetalburgCity_Text_ThisIsPetalburgGym:
 	.string "See? This is PETALBURG CITY's GYM.$"
 
 PetalburgCity_Text_ThisIsGymSign:
 	.string "This is the GYM's sign. Look for it\n"
 	.string "whenever you're looking for a GYM.$"
+
+PetalBurgCity_Text_GoShop:
+	.string "You should also go visit each shop!\n"
+	.string "Many of them have interesting items.$"
 
 PetalburgCity_Text_WaterReflection:
 	.string "My face is reflected in the water.\p"

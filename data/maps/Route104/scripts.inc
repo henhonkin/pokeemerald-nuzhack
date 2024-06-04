@@ -1021,8 +1021,8 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 Route104_Text_OnlyThrowBallAtWildPokemon:
 	.string "Humans have a hard time getting here.\n"
 	.string "That's why rare flowers can bloom.\p"
-	.string "Sometimes powder from the bugs\n"
-	.string "in the forest get accumulated\l"
+	.string "Sometimes residue from the bugs\n"
+	.string "in the forest gets accumulated\l"
 	.string "to silver powder in the flower field.$"
 
 Route104_Text_ImNotATrainer:
