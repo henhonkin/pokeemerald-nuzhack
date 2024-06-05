@@ -4552,16 +4552,29 @@ static const struct TrainerMon sParty_Claude[] = {
 
 static const struct TrainerMon sParty_Elliot1[] = {
     {
-    .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 200,
+    .species = SPECIES_KRABBY,
+    .moves = {MOVE_WATER_GUN, MOVE_METAL_CLAW, MOVE_MUD_SHOT, MOVE_NONE},
+    .ability = ABILITY_SHELL_ARMOR,
+    .nature = NATURE_HARDY,
     },
     {
-    .lvl = 7,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 200,
+    .species = SPECIES_SUNKERN,
+    .moves = {MOVE_RAZOR_LEAF, MOVE_MEGA_DRAIN, MOVE_TACKLE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     },
     {
-    .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 200,
+    .species = SPECIES_CLAMPERL,
+    .moves = {MOVE_IRON_DEFENSE, MOVE_WHIRLPOOL, MOVE_WATER_GUN, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .lvl = 200,
+    .species = SPECIES_DRATINI,
+    .moves = {MOVE_TWISTER, MOVE_WRAP, MOVE_DRAGON_TAIL, MOVE_THUNDER_WAVE},
+    .nature = NATURE_HARDY,
     }
 };
 
